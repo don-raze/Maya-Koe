@@ -1,0 +1,3867 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="imperial_gold">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+
+  <!-- ======================================================================
+       PWA FULLSCREEN MOBILE-WEB-APP META TAGS & STANDALONE MANIFEST
+       ====================================================================== -->
+  <title>[ 💎♾️Maya Koe 🤫🫦🖤💖 ] v3.4 — Sanctuary Studio</title>
+  <meta name="description" content="Sanctuary Studio — Mobile-first bilingual Mega-Scroll Voice Reader and 3-Register Tokyo Japanese Translator." />
+  <meta name="application-name" content="Maya Koe Studio" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Maya Koe Studio" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="theme-color" content="#08090D" id="meta-theme-color" />
+
+  <!-- Inline Vector App Icon (Favicon + Apple/Android Home Screen Icon) -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F5D97E'/%3E%3Cstop offset='50%25' stop-color='%23D4AF37'/%3E%3Cstop offset='100%25' stop-color='%23B88B1E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='128' height='128' rx='28' fill='%2308090D'/%3E%3Crect x='6' y='6' width='116' height='116' rx='24' fill='none' stroke='url(%23g)' stroke-width='4'/%3E%3Cpath d='M64 26 L96 58 L64 102 L32 58 Z' fill='none' stroke='url(%23g)' stroke-width='5' stroke-linejoin='round'/%3E%3Ccircle cx='64' cy='58' r='10' fill='url(%23g)'/%3E%3C/svg%3E"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23F5D97E'/%3E%3Cstop offset='50%25' stop-color='%23D4AF37'/%3E%3Cstop offset='100%25' stop-color='%23B88B1E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='192' height='192' rx='42' fill='%2308090D'/%3E%3Crect x='10' y='10' width='172' height='172' rx='36' fill='none' stroke='url(%23g)' stroke-width='6'/%3E%3Cpath d='M96 40 L144 88 L96 154 L48 88 Z' fill='none' stroke='url(%23g)' stroke-width='7' stroke-linejoin='round'/%3E%3Ccircle cx='96' cy='88' r='15' fill='url(%23g)'/%3E%3C/svg%3E"
+  />
+  <!-- Inline Standalone PWA Manifest -->
+  <link
+    rel="manifest"
+    id="pwa-manifest-link"
+    href="data:application/manifest+json,%7B%22name%22%3A%22Maya%20Koe%20v3.4%20%E2%80%94%20Sanctuary%20Studio%22%2C%22short_name%22%3A%22Maya%20Koe%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22orientation%22%3A%22portrait%22%2C%22background_color%22%3A%22%2308090D%22%2C%22theme_color%22%3A%22%2308090D%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%2520viewBox%3D'0%25200%2520512%2520512'%253E%253Crect%2520width%3D'512'%2520height%3D'512'%2520rx%3D'112'%2520fill%3D'%252308090D'%2F%253E%253Crect%2520x%3D'24'%2520y%3D'24'%2520width%3D'464'%2520height%3D'464'%2520rx%3D'92'%2520fill%3D'none'%2520stroke%3D'%2523F3CF65'%2520stroke-width%3D'16'%2F%253E%253Cpath%2520d%3D'M256%2520104%2520L384%2520232%2520L256%2520408%2520L128%2520232%2520Z'%2520fill%3D'none'%2520stroke%3D'%2523F3CF65'%2520stroke-width%3D'20'%2520stroke-linejoin%3D'round'%2F%253E%253Ccircle%2520cx%3D'256'%2520cy%3D'232'%2520r%3D'36'%2520fill%3D'%2523F3CF65'%2F%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D"
+  />
+
+  <style>
+    /* ========================================================================
+       STRICTLY 2 VISUAL THEMES VIA CSS VARIABLES
+       Theme 1 (Default): Tokyo Midnight + 8/8 Imperial Gold
+       Theme 2: Neon Underground 魔界
+       ======================================================================== */
+    :root,
+    html[data-theme="imperial_gold"] {
+      --bg-root: #08090D;
+      --text-primary: #F6F3EB;
+      --text-secondary: #B4B0A4;
+      --accent: #F3CF65;
+      --accent-muted: #C9B37E;
+      --ambient-bg:
+        radial-gradient(circle at 18% 0%, rgba(212, 175, 55, 0.14) 0%, transparent 52%),
+        radial-gradient(circle at 88% 18%, rgba(243, 207, 101, 0.08) 0%, transparent 45%);
+      --header-bg: rgba(12, 14, 20, 0.92);
+      --header-border: rgba(212, 175, 55, 0.30);
+      --card-bg: rgba(18, 21, 30, 0.95);
+      --card-border: rgba(212, 175, 55, 0.26);
+      --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.50);
+      --card-inner-bg: rgba(11, 13, 19, 0.90);
+      --card-inner-border: rgba(212, 175, 55, 0.22);
+      --result-card-bg: rgba(20, 24, 36, 0.96);
+      --result-card-border: rgba(229, 193, 88, 0.62);
+      --result-card-shadow: 0 10px 34px rgba(0, 0, 0, 0.60), 0 0 20px rgba(212, 175, 55, 0.14);
+      --result-inner-bg: rgba(11, 13, 20, 0.95);
+      --result-inner-border: rgba(243, 207, 101, 0.36);
+      --input-bg: #0A0C12;
+      --input-border: rgba(212, 175, 55, 0.32);
+      --input-focus: #F3CF65;
+      --input-focus-ring: rgba(212, 175, 55, 0.35);
+      --placeholder: #8E8778;
+      --btn-primary-bg: linear-gradient(90deg, #C89F2D 0%, #E5C158 50%, #C89F2D 100%);
+      --btn-primary-text: #090A0F;
+      --btn-primary-shadow: 0 0 20px rgba(212, 175, 55, 0.32);
+      --btn-secondary-bg: #191D29;
+      --btn-secondary-hover: #222737;
+      --btn-secondary-text: #F3CF65;
+      --btn-secondary-border: rgba(212, 175, 55, 0.36);
+      --btn-ghost-bg: #151822;
+      --btn-ghost-hover: #1E2332;
+      --btn-ghost-text: #E6DFD0;
+      --btn-ghost-border: rgba(212, 175, 55, 0.22);
+      --tab-active-bg: linear-gradient(90deg, rgba(212, 175, 55, 0.22) 0%, rgba(243, 207, 101, 0.15) 100%);
+      --tab-active-text: #F6DA80;
+      --tab-active-border: rgba(212, 175, 55, 0.62);
+      --tab-active-shadow: 0 0 16px rgba(212, 175, 55, 0.20);
+      --tab-inactive-text: #9D988C;
+      --chunk-active-bg: rgba(212, 175, 55, 0.22);
+      --chunk-active-text: #FFF8E1;
+      --chunk-active-ring: rgba(243, 207, 101, 0.62);
+      --chunk-active-shadow: 0 0 14px rgba(212, 175, 55, 0.18);
+      --pill-bg: rgba(212, 175, 55, 0.16);
+      --pill-text: #F7DC88;
+      --pill-border: rgba(243, 207, 101, 0.56);
+      --pill-shadow: 0 0 12px rgba(212, 175, 55, 0.25);
+      --dock-bg: rgba(12, 14, 21, 0.94);
+      --dock-border: rgba(212, 175, 55, 0.38);
+      --dock-shadow: 0 12px 38px rgba(0, 0, 0, 0.80);
+      --progress-track: #1D212F;
+      --progress-fill: linear-gradient(90deg, #B88B1E 0%, #F3CF65 55%, #FFF0B3 100%);
+      --ring-grad: linear-gradient(135deg, #F5D97E 0%, #B88B1E 50%, #F9E59E 100%);
+      --ring-color: #F3CF65;
+      --ring-glow: rgba(212, 175, 55, 0.55);
+      --badge-active-bg: #F3CF65;
+      --badge-active-text: #090A0F;
+      --modal-bg: #11141D;
+      --modal-border: rgba(212, 175, 55, 0.42);
+    }
+
+    html[data-theme="neon_makai"] {
+      --bg-root: #030206;
+      --text-primary: #FFFFFF;
+      --text-secondary: #B5A9C7;
+      --accent: #F472B6;
+      --accent-muted: #C084FC;
+      --ambient-bg:
+        radial-gradient(circle at 15% 0%, rgba(168, 85, 247, 0.22) 0%, transparent 50%),
+        radial-gradient(circle at 88% 15%, rgba(255, 30, 138, 0.16) 0%, transparent 45%);
+      --header-bg: rgba(7, 4, 13, 0.92);
+      --header-border: rgba(168, 85, 247, 0.36);
+      --card-bg: rgba(12, 8, 20, 0.95);
+      --card-border: rgba(168, 85, 247, 0.32);
+      --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.72);
+      --card-inner-bg: rgba(6, 3, 11, 0.90);
+      --card-inner-border: rgba(255, 42, 133, 0.26);
+      --result-card-bg: rgba(17, 9, 31, 0.96);
+      --result-card-border: rgba(217, 70, 239, 0.72);
+      --result-card-shadow: 0 10px 36px rgba(0, 0, 0, 0.80), 0 0 24px rgba(255, 42, 133, 0.22);
+      --result-inner-bg: rgba(7, 3, 14, 0.95);
+      --result-inner-border: rgba(255, 42, 133, 0.46);
+      --input-bg: #050309;
+      --input-border: rgba(168, 85, 247, 0.38);
+      --input-focus: #FF2A85;
+      --input-focus-ring: rgba(255, 42, 133, 0.42);
+      --placeholder: #8A7B9E;
+      --btn-primary-bg: linear-gradient(90deg, #7C3AED 0%, #C026D3 50%, #FF2A85 100%);
+      --btn-primary-text: #FFFFFF;
+      --btn-primary-shadow: 0 0 22px rgba(255, 42, 133, 0.38);
+      --btn-secondary-bg: #160C24;
+      --btn-secondary-hover: #1F1133;
+      --btn-secondary-text: #F472B6;
+      --btn-secondary-border: rgba(168, 85, 247, 0.46);
+      --btn-ghost-bg: #120A1E;
+      --btn-ghost-hover: #1C102E;
+      --btn-ghost-text: #F3E8FF;
+      --btn-ghost-border: rgba(168, 85, 247, 0.26);
+      --tab-active-bg: linear-gradient(90deg, rgba(139, 92, 246, 0.28) 0%, rgba(255, 42, 133, 0.26) 100%);
+      --tab-active-text: #FFFFFF;
+      --tab-active-border: rgba(255, 42, 133, 0.72);
+      --tab-active-shadow: 0 0 18px rgba(255, 42, 133, 0.28);
+      --tab-inactive-text: #8F80A8;
+      --chunk-active-bg: linear-gradient(90deg, rgba(139, 92, 246, 0.30) 0%, rgba(255, 42, 133, 0.28) 100%);
+      --chunk-active-text: #FFFFFF;
+      --chunk-active-ring: rgba(255, 42, 133, 0.78);
+      --chunk-active-shadow: 0 0 16px rgba(255, 42, 133, 0.26);
+      --pill-bg: rgba(255, 42, 133, 0.18);
+      --pill-text: #FBCFE8;
+      --pill-border: rgba(255, 42, 133, 0.66);
+      --pill-shadow: 0 0 14px rgba(255, 42, 133, 0.35);
+      --dock-bg: rgba(7, 4, 13, 0.94);
+      --dock-border: rgba(168, 85, 247, 0.46);
+      --dock-shadow: 0 12px 40px rgba(0, 0, 0, 0.88);
+      --progress-track: #1A102B;
+      --progress-fill: linear-gradient(90deg, #8B5CF6 0%, #D946EF 50%, #FF2A85 100%);
+      --ring-grad: linear-gradient(135deg, #A855F7 0%, #FF2A85 60%, #C084FC 100%);
+      --ring-color: #FF2A85;
+      --ring-glow: rgba(255, 42, 133, 0.65);
+      --badge-active-bg: #FF2A85;
+      --badge-active-text: #FFFFFF;
+      --modal-bg: #0D0717;
+      --modal-border: rgba(168, 85, 247, 0.48);
+    }
+
+    /* ========================================================================
+       BASE RESET & 100% SMOOTH SINGLE-PAGE VERTICAL SCROLL (ZERO TRAP)
+       ======================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      max-width: 100vw;
+      min-height: 100%;
+      overflow-x: hidden;
+      overscroll-behavior-y: none;
+      touch-action: pan-y;
+      -webkit-overflow-scrolling: touch;
+      -webkit-tap-highlight-color: transparent;
+      background-color: var(--bg-root);
+      color: var(--text-primary);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Hiragino Sans', 'Noto Sans JP', sans-serif;
+      transition: background-color 0.25s ease, color 0.25s ease;
+    }
+
+    button, input, select, textarea {
+      font: inherit;
+      color: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+
+    button:disabled {
+      opacity: 0.65;
+      cursor: not-allowed;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    /* Ambient Glow Layer */
+    .ambient-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background: var(--ambient-bg);
+      transition: background 0.35s ease;
+    }
+
+    /* Animations */
+    @keyframes avatarRingPulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 var(--ring-glow), 0 0 14px var(--ring-glow);
+      }
+      50% {
+        transform: scale(1.06);
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0), 0 0 26px var(--ring-glow);
+      }
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes pulseSoft {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.55; }
+    }
+
+    .spin { animation: spin 1s linear infinite; }
+    .pulse-soft { animation: pulseSoft 1.5s ease-in-out infinite; }
+    .avatar-ring-playing { animation: avatarRingPulse 1.35s ease-in-out infinite; }
+
+    /* ========================================================================
+       STICKY HEADER
+       ======================================================================== */
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      width: 100%;
+      background: var(--header-bg);
+      border-bottom: 1px solid var(--header-border);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding-top: env(safe-area-inset-top);
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 576px;
+      margin: 0 auto;
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+
+    @media (min-width: 640px) {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+
+    .header-inner {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    .header-row-1 {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .brand-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 0;
+      flex: 1;
+    }
+
+    /* Custom Avatar Ring Button */
+    .avatar-btn {
+      position: relative;
+      flex-shrink: 0;
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      padding: 2.5px;
+      background: var(--ring-grad);
+      box-shadow: 0 0 14px var(--ring-glow);
+      transition: transform 0.15s ease;
+    }
+    .avatar-btn:active {
+      transform: scale(0.95);
+    }
+
+    .avatar-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 9999px;
+      overflow: hidden;
+      background: #0A0B10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--accent);
+    }
+
+    .avatar-inner img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .avatar-live-dot {
+      position: absolute;
+      bottom: -2px;
+      right: -2px;
+      width: 14px;
+      height: 14px;
+      border-radius: 9999px;
+      background: var(--ring-color);
+      border: 2px solid #090A0F;
+    }
+
+    .brand-text {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .brand-title {
+      margin: 0;
+      font-size: 14.5px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.25;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .brand-sub {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 2px;
+      font-size: 11px;
+    }
+
+    .brand-studio {
+      color: var(--accent-muted);
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .status-ready { color: #34D399; font-weight: 600; font-size: 10px; }
+    .status-needed { color: var(--text-secondary); font-weight: 500; font-size: 10px; }
+
+    .settings-btn {
+      position: relative;
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--btn-ghost-bg);
+      border: 1px solid var(--btn-ghost-border);
+      color: var(--accent);
+      transition: transform 0.15s ease, background 0.2s ease;
+    }
+    .settings-btn:active { transform: scale(0.96); }
+
+    .settings-dot {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      width: 8px;
+      height: 8px;
+      border-radius: 9999px;
+      background: var(--ring-color);
+    }
+
+    /* Theme Toggle Bar */
+    .theme-switch {
+      margin-top: 12px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 4px;
+      border-radius: 16px;
+      background: var(--card-inner-bg);
+      border: 1px solid var(--card-inner-border);
+    }
+
+    .theme-opt {
+      min-height: 38px;
+      padding: 6px 10px;
+      border-radius: 12px;
+      font-size: 11.5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--tab-inactive-text);
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+      min-width: 0;
+    }
+
+    .theme-opt span.label-trunc {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    html[data-theme="imperial_gold"] .theme-opt[data-set-theme="imperial_gold"] {
+      background: linear-gradient(90deg, rgba(200, 159, 45, 0.30), rgba(229, 193, 88, 0.25), rgba(200, 159, 45, 0.30));
+      color: #F8DF8C;
+      border-color: rgba(212, 175, 55, 0.60);
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.20);
+    }
+
+    html[data-theme="neon_makai"] .theme-opt[data-set-theme="neon_makai"] {
+      background: linear-gradient(90deg, rgba(139, 92, 246, 0.35), rgba(255, 42, 133, 0.35));
+      color: #FFFFFF;
+      border-color: rgba(255, 42, 133, 0.70);
+      box-shadow: 0 0 14px rgba(255, 42, 133, 0.30);
+    }
+
+    .dot-gold { width: 8px; height: 8px; border-radius: 9999px; background: #F3CF65; flex-shrink: 0; }
+    .dot-makai { width: 8px; height: 8px; border-radius: 9999px; background: #FF2A85; flex-shrink: 0; }
+
+    /* Strictly 2 Tabs */
+    .tab-nav {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .tab-btn {
+      min-height: 44px;
+      padding: 8px 12px;
+      border-radius: 16px;
+      border: 1px solid transparent;
+      font-size: 12.5px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--tab-inactive-text);
+      transition: all 0.2s ease;
+    }
+
+    .tab-btn.active {
+      background: var(--tab-active-bg);
+      color: var(--tab-active-text);
+      border-color: var(--tab-active-border);
+      box-shadow: var(--tab-active-shadow);
+    }
+
+    /* ========================================================================
+       TOAST NOTIFICATION
+       ======================================================================== */
+    .toast-wrap {
+      position: fixed;
+      top: calc(168px + env(safe-area-inset-top));
+      left: 0;
+      right: 0;
+      z-index: 60;
+      display: flex;
+      justify-content: center;
+      padding: 0 16px;
+      pointer-events: none;
+    }
+
+    .toast-pill {
+      padding: 10px 18px;
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      max-width: 92vw;
+      text-align: center;
+    }
+
+    /* ========================================================================
+       MAIN CONTENT & CARDS
+       ======================================================================== */
+    .app-main {
+      position: relative;
+      z-index: 10;
+      padding-top: 16px;
+      padding-bottom: 240px;
+    }
+
+    .app-main.tab-translator-pad {
+      padding-bottom: 160px;
+    }
+
+    .stack-16 {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .stack-12 {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .card {
+      border-radius: 24px;
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      box-shadow: var(--card-shadow);
+      padding: 16px;
+      transition: background 0.25s ease, border-color 0.25s ease;
+    }
+
+    .card-inner {
+      border-radius: 16px;
+      border: 1px solid var(--card-inner-border);
+      background: var(--card-inner-bg);
+    }
+
+    .result-card {
+      border-radius: 24px;
+      border: 1.5px solid var(--result-card-border);
+      background: var(--result-card-bg);
+      box-shadow: var(--result-card-shadow);
+      padding: 18px;
+      scroll-margin-top: 180px;
+    }
+
+    .result-inner {
+      border-radius: 16px;
+      border: 1px solid var(--result-inner-border);
+      background: var(--result-inner-bg);
+      padding: 16px;
+    }
+
+    /* Buttons */
+    .btn-primary {
+      background: var(--btn-primary-bg);
+      color: var(--btn-primary-text);
+      font-weight: 700;
+      box-shadow: var(--btn-primary-shadow);
+      border-radius: 16px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: transform 0.14s ease, opacity 0.2s ease;
+    }
+    .btn-primary:active { transform: scale(0.98); }
+
+    .btn-secondary {
+      background: var(--btn-secondary-bg);
+      color: var(--btn-secondary-text);
+      border: 1px solid var(--btn-secondary-border);
+      font-weight: 600;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: transform 0.14s ease, background 0.2s ease;
+    }
+    .btn-secondary:hover { background: var(--btn-secondary-hover); }
+    .btn-secondary:active { transform: scale(0.98); }
+
+    .btn-ghost {
+      background: var(--btn-ghost-bg);
+      color: var(--btn-ghost-text);
+      border: 1px solid var(--btn-ghost-border);
+      font-weight: 600;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: transform 0.14s ease, background 0.2s ease;
+    }
+    .btn-ghost:hover { background: var(--btn-ghost-hover); }
+    .btn-ghost:active { transform: scale(0.97); }
+
+    .pill-glow {
+      background: var(--pill-bg);
+      color: var(--pill-text);
+      border: 1px solid var(--pill-border);
+      box-shadow: var(--pill-shadow);
+      border-radius: 9999px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Typography helpers */
+    .accent { color: var(--accent); }
+    .accent-muted { color: var(--accent-muted); }
+    .text-sec { color: var(--text-secondary); }
+    .text-pri { color: var(--text-primary); }
+    .section-kicker {
+      margin: 0;
+      font-size: 11.5px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .sub-caption {
+      margin: 2px 0 0;
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+    .tabular { font-variant-numeric: tabular-nums; }
+
+    /* Form Controls */
+    .studio-input,
+    .studio-select,
+    .studio-textarea {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--input-border);
+      color: var(--text-primary);
+      border-radius: 16px;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .studio-input::placeholder,
+    .studio-textarea::placeholder {
+      color: var(--placeholder);
+    }
+
+    .studio-input:focus,
+    .studio-select:focus,
+    .studio-textarea:focus {
+      border-color: var(--input-focus);
+      box-shadow: 0 0 0 2px var(--input-focus-ring);
+    }
+
+    .studio-select {
+      min-height: 44px;
+      padding: 10px 14px;
+      font-size: 13px;
+    }
+
+    .studio-select option {
+      background-color: #0E1017;
+      color: #FFFFFF;
+    }
+
+    .studio-textarea {
+      padding: 16px;
+      font-size: 15.5px;
+      line-height: 1.65;
+      resize: none;
+      touch-action: pan-y;
+    }
+
+    /* Dual Voice Engine Switch */
+    .segmented-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 4px;
+      border-radius: 16px;
+      background: var(--card-inner-bg);
+      border: 1px solid var(--card-inner-border);
+    }
+
+    .seg-btn {
+      min-height: 42px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      color: var(--tab-inactive-text);
+      transition: all 0.2s ease;
+    }
+
+    .seg-btn.active {
+      background: var(--tab-active-bg);
+      color: var(--tab-active-text);
+      border-color: var(--tab-active-border);
+      box-shadow: var(--tab-active-shadow);
+    }
+
+    /* Movements Accordion */
+    .mv-list {
+      margin-top: 12px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.10);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    @media (min-width: 560px) {
+      .mv-list { grid-template-columns: 1fr 1fr; }
+    }
+
+    .mv-item {
+      min-height: 42px;
+      padding: 8px 12px;
+      border-radius: 12px;
+      border: 1px solid var(--btn-ghost-border);
+      background: var(--btn-ghost-bg);
+      color: var(--btn-ghost-text);
+      text-align: left;
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.18s ease;
+      min-width: 0;
+    }
+
+    .mv-item.selected {
+      background: var(--tab-active-bg);
+      color: var(--tab-active-text);
+      border-color: var(--tab-active-border);
+      box-shadow: var(--tab-active-shadow);
+    }
+
+    .mv-num {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 9999px;
+      font-size: 10px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    .mv-item.selected .mv-num {
+      background: var(--badge-active-bg);
+      color: var(--badge-active-text);
+    }
+
+    /* Sliders Grid */
+    .sliders-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 520px) {
+      .sliders-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .studio-range {
+      width: 100%;
+      height: 8px;
+      cursor: pointer;
+      accent-color: var(--ring-color);
+    }
+
+    /* Auto-Fallback Toggle Switch */
+    .toggle-row {
+      width: 100%;
+      padding: 11px 13px;
+      border-radius: 16px;
+      border: 1px solid var(--card-inner-border);
+      background: var(--card-inner-bg);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      text-align: left;
+      transition: border-color 0.2s ease;
+    }
+
+    .switch-track {
+      position: relative;
+      flex-shrink: 0;
+      width: 46px;
+      height: 26px;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid var(--card-inner-border);
+      transition: background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    }
+
+    .switch-track.is-on {
+      background: var(--btn-primary-bg);
+      border-color: transparent;
+      box-shadow: 0 0 12px var(--ring-glow);
+    }
+
+    .switch-thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: 20px;
+      height: 20px;
+      border-radius: 9999px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+      transition: transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .switch-track.is-on .switch-thumb {
+      transform: translateX(20px);
+    }
+
+    /* Live Story Stage (100% single-page scroll, zero inner scroll traps) */
+/* ... existing code ... -->
+          <div class="brand-text">
+            <h1 class="brand-title">[ 💎♾️Maya Koe 🤫🫦🖤💖 ] <span class="accent">v3.4</span></h1>
+            <div class="brand-sub">
+              <span class="brand-studio">Sanctuary Studio</span>
+              <span style="opacity:0.4">•</span>
+              <span id="header-key-status" class="status-needed">Key Needed</span>
+            </div>
+          </div>
+        </div>
+
+        <button type="button" id="btn-open-settings" class="settings-btn" aria-label="Open Studio Settings">
+          <svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          <span id="settings-key-dot" class="settings-dot"></span>
+        </button>
+      </div>
+
+      <!-- Row 2: Strictly 2-Theme Instant Toggle -->
+      <div class="theme-switch" role="group" aria-label="Visual Theme Switcher">
+        <button type="button" class="theme-opt" data-set-theme="imperial_gold">
+          <span class="dot-gold"></span>
+          <span class="label-trunc">8/8 Imperial Gold</span>
+        </button>
+        <button type="button" class="theme-opt" data-set-theme="neon_makai">
+          <span class="dot-makai"></span>
+          <span class="label-trunc">Neon Underground 魔界</span>
+        </button>
+      </div>
+
+      <!-- Row 3: Strictly 2 Lean Tabs -->
+      <nav class="tab-nav" aria-label="Studio Tabs">
+        <button type="button" id="tab-btn-reader" class="tab-btn active">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">MMS &amp; Voice Reader</span>
+        </button>
+        <button type="button" id="tab-btn-translator" class="tab-btn">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
+          <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">3-Register Translator</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Floating Toast -->
+  <div id="toast-wrap" class="toast-wrap hidden">
+    <div id="toast-pill" class="toast-pill"></div>
+  </div>
+
+  <!-- ========================================================================
+       MAIN VIEWPORT (100% SINGLE-PAGE SMOOTH SCROLL)
+       ======================================================================== -->
+  <main id="app-main" class="container app-main">
+    <!-- ====================================================================
+         TAB 1: MMS & VOICE READER
+         ==================================================================== -->
+    <div id="panel-reader" class="stack-16">
+      <!-- 1. OFFLINE .DOCX LOADER + SCRUBBER + COLLAPSIBLE MOVEMENTS -->
+      <section class="card stack-12">
+        <button type="button" id="btn-open-docx" class="btn-primary" style="width:100%;min-height:48px;padding:12px 16px;font-size:14px;">
+          <svg id="docx-icon-upload" class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          <svg id="docx-icon-spin" class="icon-svg spin hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          <span id="docx-btn-label">Open .docx Mega-Scroll</span>
+        </button>
+
+        <!-- File Meta & Scrubber Toggle -->
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px;padding-top:2px;">
+          <div style="display:flex;align-items:center;gap:7px;font-size:12px;min-width:0;">
+            <svg class="icon-svg accent" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span id="doc-filename-label" class="text-sec" style="max-width:170px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">Active Studio Scroll</span>
+            <span id="doc-wordcount-badge" class="card-inner accent-muted tabular" style="padding:2px 8px;border-radius:9999px;font-size:11px;font-weight:600;">0 words</span>
+          </div>
+
+          <button type="button" id="btn-scrubber" class="pill-glow" style="min-height:34px;padding:4px 12px;font-size:11px;" aria-pressed="true">
+            <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 4-1 1 4 4 1-1a2.83 2.83 0 1 0-4-4Z"/><path d="m13 6-8.5 8.5a2.12 2.12 0 1 0 3 3L16 9"/><path d="M11 6 9 4"/><path d="M18 13l2 2"/><path d="M6 11l-2-2"/></svg>
+            <span id="scrubber-label">Scrubber: ON</span>
+          </button>
+        </div>
+
+        <!-- Compact 1-Row Collapsible Movements Accordion -->
+        <div id="movements-box" class="card-inner" style="padding:12px;">
+          <button type="button" id="btn-movements-toggle" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;min-height:38px;" aria-expanded="false">
+            <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+              <svg class="icon-svg accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              <div style="min-width:0;">
+                <span id="mv-active-counter" class="accent-muted" style="display:block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Movement 1 of 1</span>
+                <span id="mv-active-title" style="display:block;font-size:12.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Movement I</span>
+              </div>
+            </div>
+            <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+              <span id="mv-toggle-pill" class="btn-ghost" style="padding:3px 9px;border-radius:9999px;font-size:10.5px;">Chapters</span>
+              <span id="mv-chevron" class="accent"></span>
+            </div>
+          </button>
+          <div id="movements-list" class="mv-list hidden"></div>
+        </div>
+      </section>
+
+      <!-- 2. DUAL VOICE ENGINE SWITCHER -->
+      <section class="card stack-12">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div style="display:flex;align-items:center;gap:8px;">
+            <svg class="icon-svg accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            <h2 style="margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;">Voice Engine</h2>
+          </div>
+          <span id="engine-model-caption" class="text-sec" style="font-size:11px;font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">gemini-2.5-flash-preview-tts</span>
+        </div>
+
+        <div class="segmented-2">
+          <button type="button" id="btn-engine-gemini" class="seg-btn active">
+            <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+            <span>Gemini Neural TTS</span>
+          </button>
+          <button type="button" id="btn-engine-browser" class="seg-btn">
+            <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" y1="2" x2="22" y2="22"/><path d="M8.5 16.5a5 5 0 0 1 7 0"/><path d="M2 8.82a15 15 0 0 1 4.17-2.65"/><path d="M10.66 5c4.01-.36 8.14.9 11.34 3.76"/><path d="M16.85 11.25a10 10 0 0 1 2.22 1.68"/><path d="M5 13a10 10 0 0 1 5.24-2.76"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>
+            <span>Offline Browser TTS</span>
+          </button>
+        </div>
+
+        <!-- ENGINE A: GEMINI NEURAL TTS -->
+        <div id="engine-gemini-panel" class="stack-12">
+          <!-- No API key prompt -->
+          <div id="gemini-nokey-card" class="card-inner" style="padding:14px;display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <svg class="icon-svg accent" style="margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <p class="text-sec" style="margin:0;font-size:12px;line-height:1.55;">
+                Paste your free Google AI Studio API Key in Settings to unlock Native Gemini Neural TTS, or switch to Offline Browser TTS for instant offline playback.
+              </p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:8px;">
+              <button type="button" id="btn-inline-add-key" class="btn-primary" style="min-height:38px;padding:6px 14px;font-size:12px;border-radius:12px;">
+                <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>
+                <span>Add Free API Key</span>
+              </button>
+              <button type="button" id="btn-inline-use-offline" class="btn-secondary" style="min-height:38px;padding:6px 14px;font-size:12px;">
+                Use Offline Voice
+              </button>
+            </div>
+          </div>
+
+          <!-- Active Gemini Controls -->
+          <div id="gemini-active-controls" class="stack-12 hidden">
+            <div>
+              <label for="select-delivery-style" class="accent-muted" style="display:block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px;">Emotion &amp; Delivery Style</label>
+              <select id="select-delivery-style" class="studio-select"></select>
+              <p id="delivery-prompt-preview" class="text-sec" style="margin:6px 0 0;font-size:11px;line-height:1.5;font-style:italic;"></p>
+            </div>
+
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+              <label for="select-gemini-voice" class="accent-muted" style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Neural Voice</label>
+              <select id="select-gemini-voice" class="studio-select" style="width:auto;min-height:38px;padding:6px 12px;font-size:12px;border-radius:12px;"></select>
+            </div>
+          </div>
+        </div>
+
+        <!-- ENGINE B: OFFLINE BROWSER TTS -->
+        <div id="engine-browser-panel" class="stack-12 hidden">
+          <div id="browser-sandbox-tip" class="card-inner hidden" style="padding:14px;display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:flex-start;gap:10px;">
+              <svg class="icon-svg accent" style="margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+              <div class="text-sec" style="font-size:12px;line-height:1.55;">
+                <p class="text-pri" style="margin:0 0 3px;font-weight:600;">No Offline Speech Voices Detected Yet?</p>
+                <p style="margin:0;">Some embedded webviews restrict offline <code class="accent">speechSynthesis</code>. Paste your free Google AI Studio API Key in Settings for <strong class="text-pri">Native Gemini Neural TTS</strong> anytime.</p>
+              </div>
+            </div>
+            <button type="button" id="btn-sandbox-open-settings" class="btn-primary" style="min-height:38px;padding:6px 14px;font-size:12px;border-radius:12px;align-self:flex-start;">
+              <span>Paste Free API Key in Settings</span>
+            </button>
+          </div>
+
+          <div>
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:6px;">
+              <label for="select-browser-voice" class="accent-muted" style="font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;">Device Voice (ja-JP Prioritized)</label>
+              <button type="button" id="btn-maya-preset" class="btn-secondary" style="min-height:32px;padding:4px 10px;font-size:11px;">
+                <svg class="icon-svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                <span>Maya's Chosen Preset</span>
+              </button>
+            </div>
+            <select id="select-browser-voice" class="studio-select"></select>
+          </div>
+
+          <div class="sliders-grid">
+            <div class="card-inner" style="padding:12px;">
+              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px;">
+                <span class="text-sec" style="font-weight:600;">Speed</span>
+                <span id="speed-val-label" class="accent tabular" style="font-weight:700;">0.88x</span>
+              </div>
+              <input id="slider-rate" type="range" class="studio-range" min="0.65" max="1.35" step="0.01" value="0.88" />
+              <div style="display:flex;justify-content:space-between;font-size:10px;opacity:0.5;margin-top:4px;">
+                <span>0.65x</span><span>0.88x</span><span>1.35x</span>
+              </div>
+            </div>
+
+            <div class="card-inner" style="padding:12px;">
+              <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:8px;">
+                <span class="text-sec" style="font-weight:600;">Pitch</span>
+                <span id="pitch-val-label" class="accent tabular" style="font-weight:700;">1.06</span>
+              </div>
+              <input id="slider-pitch" type="range" class="studio-range" min="0.80" max="1.30" step="0.01" value="1.06" />
+              <div style="display:flex;justify-content:space-between;font-size:10px;opacity:0.5;margin-top:4px;">
+                <span>0.80</span><span>1.06</span><span>1.30</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seamless Auto-Fallback Toggle Switch (ON by default) -->
+        <button type="button" id="btn-auto-fallback" class="toggle-row" role="switch" aria-checked="true">
+          <div style="min-width:0;">
+            <span style="display:block;font-size:12px;font-weight:600;line-height:1.35;">Auto-Fallback to Offline Voice if Cloud Blocked</span>
+            <span id="fallback-sub-label" class="sub-caption" style="display:block;">ON — Speaks blocked chunks offline &amp; resumes Gemini next</span>
+          </div>
+          <span id="fallback-switch-track" class="switch-track is-on" aria-hidden="true">
+            <span class="switch-thumb"></span>
+          </span>
+        </button>
+
+        <!-- Graceful Free-Tier Auto-Pacing Status Pill -->
+        <div id="reader-pacing-banner" class="pill-glow pacing-banner hidden">
+          <div style="display:flex;align-items:center;gap:8px;min-width:0;">
+            <svg class="icon-svg pulse-soft" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span id="reader-pacing-text" style="font-weight:600;">Free Tier pacing — resuming automatically in 20s...</span>
+          </div>
+          <button type="button" id="btn-cancel-pacing" style="font-size:11px;font-weight:700;text-decoration:underline;flex-shrink:0;">Cancel</button>
+        </div>
+
+        <!-- Reader Error Banner -->
+        <div id="reader-error-banner" class="error-banner hidden">
+          <svg class="icon-svg" style="color:#FB7185;margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <div id="reader-error-text" style="flex:1;word-break:break-word;"></div>
+          <button type="button" id="btn-dismiss-reader-err" aria-label="Dismiss error" style="color:#FDA4AF;padding:2px;">
+            <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- 3. LIVE STORY STAGE READER BOX -->
+      <section class="card stack-12">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div style="min-width:0;">
+            <h2 class="section-kicker">Live Story Stage</h2>
+            <p id="stage-subtitle" class="sub-caption" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Tap any chunk to jump &amp; play (~450–650 word batches)</p>
+          </div>
+          <span id="stage-chunk-pill" class="card-inner accent-muted tabular" style="flex-shrink:0;padding:4px 10px;border-radius:9999px;font-size:11px;font-weight:600;">Chunk 1 / 1</span>
+        </div>
+
+        <div id="live-story-stage" class="card-inner story-stage"></div>
+      </section>
+
+      <!-- 4. RAW TEXT PASTE BOX (AUTO-GROWING, ZERO INNER SCROLLBAR) -->
+      <section class="card stack-12">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div>
+            <h2 class="section-kicker">Raw Text Paste Box</h2>
+            <p class="sub-caption">Auto-expands smoothly with the page — zero scroll trapping</p>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+            <button type="button" id="btn-toggle-pastebox" class="btn-ghost" style="min-height:34px;padding:4px 10px;font-size:11px;">
+              <span id="pastebox-toggle-label">Hide</span>
+            </button>
+            <button type="button" id="btn-clear-raw" class="btn-ghost" style="min-height:34px;padding:4px 10px;font-size:11px;" aria-label="Clear pasted text">
+              <svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+              <span>Clear</span>
+            </button>
+          </div>
+        </div>
+
+        <textarea
+          id="raw-text-input"
+          class="studio-textarea"
+          style="min-height:340px;overflow:hidden;"
+          placeholder="Paste your letter, Japanese study guide, or full 6,000-word Mega-Scroll here..."
+        ></textarea>
+
+        <div style="display:flex;align-items:center;justify-content:space-between;font-size:11px;">
+          <span id="raw-stats-label" class="text-sec tabular">0 chars • 0 words</span>
+          <button type="button" id="btn-load-sample" class="accent-muted" style="font-weight:600;text-decoration:underline;text-underline-offset:4px;">Load Sample Scroll</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ====================================================================
+         TAB 2: 3-REGISTER JAPANESE TRANSLATOR
+         ==================================================================== -->
+    <div id="panel-translator" class="stack-16 hidden">
+      <section class="card stack-12">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div>
+            <h2 class="section-kicker">3-Register Japanese Translator</h2>
+            <p class="sub-caption">Casual Danseigo • Standard Polite • Formal Keigo</p>
+          </div>
+          <button type="button" id="btn-toggle-history" class="btn-ghost hidden" style="min-height:36px;padding:6px 12px;font-size:11px;">
+            <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg>
+            <span id="history-btn-label">Recent (0)</span>
+          </button>
+        </div>
+
+        <!-- Recent History Collapsible List -->
+        <div id="history-list" class="card-inner hidden" style="padding:10px;display:flex;flex-direction:column;gap:6px;"></div>
+
+        <!-- English Input -->
+        <textarea
+          id="translator-input"
+          class="studio-textarea"
+          rows="4"
+          style="min-height:125px;"
+          placeholder='Type any English phrase or real-life situation — e.g. "I forgot the screenwash again" or "Can I get a table for two?"'
+        ></textarea>
+
+        <!-- Example Chips -->
+        <div id="translator-examples" class="chip-wrap"></div>
+
+        <!-- Translate Button -->
+        <button type="button" id="btn-translate" class="btn-primary" style="width:100%;min-height:50px;padding:12px 20px;font-size:14px;">
+          <svg id="trans-icon-spark" class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          <svg id="trans-icon-spin" class="icon-svg spin hidden" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          <span id="trans-btn-label">Translate into 3 Registers</span>
+        </button>
+
+        <!-- Translator Error / No-Key Container -->
+        <div id="translator-error-box" class="hidden"></div>
+      </section>
+
+      <!-- 3 Register Result Cards -->
+      <div id="translator-results" class="stack-16 hidden"></div>
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       STICKY GLASSMORPHIC BOTTOM CONTROL DOCK (TAB 1)
+       ======================================================================== -->
+  <div id="bottom-dock" class="dock-wrapper">
+    <div class="dock-card">
+      <!-- Normal Meta Row -->
+      <div id="dock-meta-normal" class="dock-meta">
+        <span id="dock-mv-label" class="text-sec" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:500;">Movement I</span>
+        <span id="dock-chunk-label" class="accent tabular" style="flex-shrink:0;font-weight:700;">Chunk 1 / 1</span>
+      </div>
+
+      <!-- Free-Tier Pacing Meta Row -->
+      <div id="dock-meta-pacing" class="pill-glow hidden" style="justify-content:space-between;padding:4px 10px;font-size:11px;margin-bottom:6px;">
+        <span style="display:flex;align-items:center;gap:6px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;">
+          <svg class="icon-svg pulse-soft" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span id="dock-pacing-text" style="overflow:hidden;text-overflow:ellipsis;">Free Tier pacing — resuming automatically...</span>
+        </span>
+        <span id="dock-pacing-chunk" class="tabular" style="flex-shrink:0;font-weight:700;">Chunk 1 / 1</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="dock-progress-fill" class="progress-fill" style="width:0%;"></div>
+      </div>
+
+      <div class="dock-controls">
+        <button type="button" id="dock-btn-restart" class="dock-btn" aria-label="Restart Movement">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          <span>Restart</span>
+        </button>
+
+        <button type="button" id="dock-btn-prev" class="dock-btn" aria-label="Rewind 1 Chunk">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/></svg>
+          <span>-1 Chunk</span>
+        </button>
+
+        <button type="button" id="dock-btn-play" class="btn-primary dock-play-btn" aria-label="Play">
+          <span id="dock-play-icon"></span>
+        </button>
+
+        <button type="button" id="dock-btn-next" class="dock-btn" aria-label="Skip 1 Chunk">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/></svg>
+          <span>+1 Chunk</span>
+        </button>
+
+        <button type="button" id="dock-btn-stop" class="dock-btn" aria-label="Stop Playback">
+          <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/></svg>
+          <span>Stop</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       SETTINGS MODAL
+       ======================================================================== -->
+  <div id="settings-modal" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-label="Sanctuary Studio Settings">
+    <div class="modal-center">
+      <div class="modal-card" id="settings-modal-card">
+        <!-- Header -->
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <div class="card-inner" style="width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:14px;">
+              <svg class="icon-svg accent" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="15.5" r="5.5"/><path d="m21 2-9.6 9.6"/><path d="m15.5 7.5 3 3L22 7l-3-3"/></svg>
+            </div>
+            <div>
+              <h2 style="margin:0;font-size:16px;font-weight:700;">Sanctuary Studio Settings</h2>
+              <p class="sub-caption">Saved privately in localStorage on your device</p>
+            </div>
+          </div>
+          <button type="button" id="btn-close-settings" class="btn-ghost" style="width:40px;height:40px;" aria-label="Close Settings">
+            <svg class="icon-svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </button>
+        </div>
+
+        <!-- Private API Key Input -->
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <label for="input-api-key" class="section-kicker">Private Google AI Studio API Key</label>
+          <div style="position:relative;display:flex;align-items:center;">
+            <input id="input-api-key" type="password" class="studio-input" style="min-height:46px;padding:10px 46px 10px 14px;font-family:monospace;font-size:14px;" placeholder="AIzaSy..." autocomplete="off" spellcheck="false" />
+            <button type="button" id="btn-toggle-key-vis" class="text-sec" style="position:absolute;right:8px;width:36px;height:36px;display:flex;align-items:center;justify-content:center;" aria-label="Toggle API key visibility"></button>
+          </div>
+          <p class="sub-caption">Your key never touches any third-party server — requests go directly from your browser to Google Gemini.</p>
+        </div>
+
+        <!-- 3-Step Free API Key Guide -->
+        <div class="card-inner" style="padding:14px;display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+            <span class="accent" style="font-size:12px;font-weight:700;">How to get a FREE API key (No credit card required)</span>
+            <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer" class="accent-muted" style="font-size:11px;font-weight:600;text-decoration:underline;text-underline-offset:4px;">aistudio.google.com ↗</a>
+          </div>
+          <ol class="step-list">
+            <li class="step-item">
+              <span class="pill-glow step-num">1</span>
+              <span>Open <strong class="text-pri">aistudio.google.com</strong> and sign in with your regular Google account.</span>
+            </li>
+            <li class="step-item">
+              <span class="pill-glow step-num">2</span>
+              <span>Tap <strong class="text-pri">Get API key</strong> → <strong class="text-pri">Create API key</strong> (free tier works immediately with zero billing setup).</span>
+            </li>
+            <li class="step-item">
+              <span class="pill-glow step-num">3</span>
+              <span>Copy the key starting with <code class="accent">AIza...</code>, paste it above, and tap <strong class="text-pri">Save Settings</strong>.</span>
+            </li>
+          </ol>
+        </div>
+
+        <!-- Gemini Native TTS Model Selector -->
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <span class="section-kicker">Native Gemini TTS Model</span>
+          <div id="settings-model-list" style="display:flex;flex-direction:column;gap:8px;"></div>
+        </div>
+
+        <!-- Custom Avatar Manager -->
+        <div class="card-inner" style="padding:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;">
+          <div style="display:flex;align-items:center;gap:12px;min-width:0;">
+            <div id="settings-avatar-preview" style="width:44px;height:44px;border-radius:9999px;overflow:hidden;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.16);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--accent);"></div>
+            <div style="min-width:0;">
+              <p style="margin:0;font-size:12.5px;font-weight:600;">Custom Avatar Ring</p>
+              <p id="settings-avatar-caption" class="sub-caption" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">Tap to pick from gallery</p>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;flex-shrink:0;">
+            <button type="button" id="btn-settings-pick-avatar" class="btn-secondary" style="min-height:36px;padding:6px 12px;font-size:12px;">Pick</button>
+            <button type="button" id="btn-settings-clear-avatar" class="btn-ghost hidden" style="min-height:36px;padding:6px 10px;" aria-label="Reset Avatar">
+              <svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer Actions -->
+        <div style="display:flex;align-items:center;gap:10px;padding-top:4px;">
+          <button type="button" id="btn-clear-api-key" class="btn-ghost hidden" style="min-height:48px;padding:0 16px;font-size:12px;border-radius:16px;">Clear Key</button>
+          <button type="button" id="btn-save-settings" class="btn-primary" style="flex:1;min-height:48px;padding:0 20px;font-size:14px;">
+            <svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            <span>Save Settings</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       STANDALONE ZERO-DEPENDENCY APPLICATION LOGIC
+       ======================================================================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      // ======================================================================
+      // CONSTANTS & LOCALSTORAGE KEYS (COMPATIBLE WITH v3.x)
+      // ======================================================================
+      const STORAGE_KEYS = {
+        THEME: 'mayakoe_v3_theme',
+        API_KEY: 'mayakoe_v3_api_key',
+        TTS_MODEL: 'mayakoe_v3_tts_model',
+        TTS_VOICE: 'mayakoe_v3_tts_voice',
+        AVATAR: 'mayakoe_v3_avatar',
+        SCRUBBER: 'mayakoe_v3_scrubber',
+        AUTO_FALLBACK: 'mayakoe_v3_auto_fallback',
+        ENGINE: 'mayakoe_v3_engine',
+        DELIVERY_STYLE: 'mayakoe_v3_delivery_style',
+        BROWSER_RATE: 'mayakoe_v3_browser_rate',
+        BROWSER_PITCH: 'mayakoe_v3_browser_pitch',
+        BROWSER_VOICE: 'mayakoe_v3_browser_voice',
+        STORY_TEXT: 'mayakoe_v3_story_text',
+        TRANS_HISTORY: 'mayakoe_v3_trans_history'
+      };
+
+      const PERMISSIVE_SAFETY_SETTINGS = [
+        { category: 'HARM_CATEGORY_HARASSMENT', threshold: 'BLOCK_NONE' },
+        { category: 'HARM_CATEGORY_HATE_SPEECH', threshold: 'BLOCK_NONE' },
+        { category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT', threshold: 'BLOCK_NONE' },
+        { category: 'HARM_CATEGORY_DANGEROUS_CONTENT', threshold: 'BLOCK_NONE' }
+      ];
+
+      const GEMINI_VOICES = [
+        { id: 'Aoede', desc: 'Breezy & Warm' },
+        { id: 'Sulafat', desc: 'Warm & Smooth' },
+        { id: 'Leda', desc: 'Youthful & Clear' },
+        { id: 'Kore', desc: 'Firm & Crisp' },
+        { id: 'Vindemiatrix', desc: 'Gentle & Intimate' },
+        { id: 'Zephyr', desc: 'Bright & Airy' },
+        { id: 'Callirrhoe', desc: 'Easy-going' },
+        { id: 'Despina', desc: 'Velvet Smooth' }
+      ];
+
+      const DELIVERY_PRESETS = [
+        {
+          id: 'intimate_tokyo',
+          label: 'Intimate Tokyo Letter (Default)',
+          prompt: 'Warm, slow, breathy Tokyo female accent speaking intimate English and natural Japanese'
+        },
+        {
+          id: 'sensei_tokyo',
+          label: 'Encouraging Tokyo Sensei',
+          prompt: 'Crisp, clear, encouraging Tokyo Japanese Sensei'
+        },
+        {
+          id: 'playful_partner',
+          label: 'Playful Low-Voiced Partner',
+          prompt: 'Playful, teasing, low-voiced Tokyo partner'
+        }
+      ];
+
+      const REGISTER_VOICE_DIRECTIONS = {
+        casual: 'relaxed, warm Tokyo friend',
+        polite: 'friendly everyday Tokyo local',
+        keigo: 'crisp, respectful Tokyo hotel concierge'
+      };
+
+      const TRANSLATOR_EXAMPLES = [
+        'I forgot the screenwash again',
+        'Can I get a table for two?',
+        'Wait for me, I am almost there!',
+        'Sorry to bother you, could you check this for me?'
+      ];
+
+      const SAMPLE_MEGA_SCROLL = `# Movement I — Midnight Rain in Roppongi 🌧️✨
+
+Tonight the neon reflections blur across the wet asphalt outside our window. **Slow down for a second**, breathe out, and let the hum of Tokyo carry the weight off your shoulders. 🖤
+
+お疲れ様。今日も本当に頑張ったね。少しだけ目を閉じて、私の声を聞いていて。
+
+Notice how quiet the room becomes when the city outside never sleeps? Every word on this scroll is yours to move through at your own pace—zero rushing, zero screen-jumping.
+
+# Movement II — Golden Hour Study Notes 💎
+
+When speaking natural Tokyo Japanese with someone close, listen for soft spoken contractions. Instead of rigid textbook endings, people gently fold phrases together: 「忘れちゃった」 (wasurechatta — I accidentally forgot) or 「待ってるよ」 (matteru yo — I'm waiting for you).
+
+Tap any passage right here in the Live Story Stage to jump directly to its chunk, or upload a full 6,000-word .docx Mega-Scroll above to unlock clickable Movements. 💖`;
+
+      const CONTRACTION_PATTERNS = [
+        {
+          id: 'chatta',
+          regex: /(?:chatta|jatta|ちゃった|じゃった)/i,
+          badge: '~chatta / ちゃった',
+          baseForm: '~te shimatta (〜てしまった)',
+          meaning: 'Ended up doing / accidentally did (often with slight regret or "oops!" nuance).',
+          vibe: 'Casual Spoken Contraction'
+        },
+        {
+          id: 'chau',
+          regex: /(?:chau|jau|ちゃう|じゃう)/i,
+          badge: '~chau / ちゃう',
+          baseForm: '~te shimau (〜てしまう)',
+          meaning: 'Will end up doing / accidentally do / do completely.',
+          vibe: 'Casual Spoken Contraction'
+        },
+        {
+          id: 'teru',
+          regex: /(?:teru|deru|てる|でる)(?=[\s.,!?。！？よよねなのぞぜわ]|$)/i,
+          badge: '~teru / てる',
+          baseForm: '~te iru (〜ている)',
+          meaning: 'Ongoing action or current state with the "i" dropped for smooth everyday flow.',
+          vibe: 'Everyday Contraction'
+        },
+        {
+          id: 'teta',
+          regex: /(?:teta|deta|てた|でた)(?=[\s.,!?。！？よよねなのぞぜわ]|$)/i,
+          badge: '~teta / てた',
+          baseForm: '~te ita (〜ていた)',
+          meaning: 'Was doing / had been in a state (contracted from ~te ita).',
+          vibe: 'Everyday Contraction'
+        },
+        {
+          id: 'tara',
+          regex: /(?:tara|dara|たら|だら)/i,
+          badge: '~tara / たら',
+          baseForm: 'Conditional ~tara (〜たら)',
+          meaning: 'Casual "if / when / once..." used constantly in spoken Tokyo Japanese.',
+          vibe: 'Conversational Conditional'
+        },
+        {
+          id: 'jan',
+          regex: /(?:jan\b|じゃん)/i,
+          badge: '~jan / じゃん',
+          baseForm: 'ja nai ka (じゃないか)',
+          meaning: '"Isn\'t it?" / "Right?" — relaxed Tokyo casual confirmation tag.',
+          vibe: 'Tokyo Casual Slang'
+        },
+        {
+          id: 'nakya',
+          regex: /(?:nakya|nakucha|なきゃ|なくちゃ)/i,
+          badge: '~nakya / なきゃ',
+          baseForm: '~nakereba naranai (〜なければならない)',
+          meaning: '"Gotta..." / "Have to..." — heavily shortened casual obligation.',
+          vibe: 'Casual Spoken Contraction'
+        },
+        {
+          id: 'masc_ee',
+          regex: /(?:[a-z]*(?:nee|gee|bee|mee|dee|kee|tee|ree)\b|[ぁ-んァ-ヶ一-龠]+(?:ねえ|ねぇ|すげえ|すげぇ|やべえ|やべぇ|うめえ|うめぇ|わかんねえ|わかんねぇ|知らねえ|知らねぇ|いねえ|いねぇ|できねえ|できねぇ|ねえよ|ねぇよ))/i,
+          badge: '-ee / ねぇ (Danseigo)',
+          baseForm: '-ai / -oi adjective or ~nai (〜ない)',
+          meaning: 'Rough, masculine Tokyo vowel fusion (ai/oi → ee), giving a cool, blunt, streetwise tone.',
+          vibe: 'Masculine Danseigo'
+        },
+        {
+          id: 'masc_ze_zo',
+          regex: /(?:\b(?:ze|zo)\b|[ぜぞ](?=[。！？!?]|$))/i,
+          badge: '~ze / ~zo (ぜ・ぞ)',
+          baseForm: 'Masculine sentence-ending particle',
+          meaning: 'Confident, emphatic masculine ending ("you know!", "let\'s go!").',
+          vibe: 'Masculine Danseigo'
+        },
+        {
+          id: 'ore',
+          regex: /(?:\bore\b|俺)/i,
+          badge: 'Ore / 俺',
+          baseForm: 'Masculine "I / me"',
+          meaning: 'Confident, informal masculine first-person pronoun used among close friends or partners.',
+          vibe: 'Masculine Danseigo'
+        }
+      ];
+
+      // Inline SVG snippets
+      const ICONS = {
+        camera: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="3"/></svg>',
+        chevDown: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>',
+        chevUp: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>',
+        play: '<svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>',
+        playSm: '<svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 3 20 12 6 21 6 3"/></svg>',
+        pause: '<svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>',
+        stopSm: '<svg class="icon-svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="5" width="14" height="14" rx="2"/></svg>',
+        loader: '<svg class="icon-svg spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>',
+        loaderSm: '<svg class="icon-svg spin" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>',
+        clock: '<svg class="icon-svg pulse-soft" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+        eye: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>',
+        eyeOff: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>',
+        copy: '<svg class="icon-svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>',
+        checkGreen: '<svg class="icon-svg" style="color:#34D399;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+        info: '<svg class="icon-svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>',
+        spark: '<svg class="icon-svg accent" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>',
+        bookEmpty: '<svg class="icon-svg accent" style="opacity:0.45;margin-bottom:10px;" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>'
+      };
+
+      // ======================================================================
+      // TEXT SCRUBBING, MOVEMENT PARSING & SMART 450-650 WORD CHUNK BATCHING
+      // ======================================================================
+      function toNaturalSentenceCase(str) {
+        const lowered = str.toLowerCase();
+        // Capitalize start of string and start of sentences/clauses
+        let cased = lowered.replace(/(^|[.!?]\s+|[—–:]\s+)([a-z])/g, (_, prefix, ch) => prefix + ch.toUpperCase());
+        // Preserve English pronoun "I" and common contractions
+        cased = cased.replace(/\bi\b/g, 'I').replace(/\bi'(m|ve|ll|d)\b/g, (_, s) => `I'${s}`);
+        // Preserve key proper nouns for crisp natural cadence
+        cased = cased.replace(/\b(tokyo|japan|japanese|english|maya|gemini|roppongi|shibuya|shinjuku|ginza)\b/gi, (m) =>
+          m.charAt(0).toUpperCase() + m.slice(1).toLowerCase()
+        );
+        return cased;
+      }
+
+      function expandSpeechAbbreviations(line) {
+        return line
+          .replace(/\bTTS\b/gi, 'text to speech')
+          .replace(/(?:\.docx\b|\bDOCX\b)/gi, 'Word document')
+          .replace(/\bRPM\b/g, 'requests per minute')
+          .replace(/\bUI\/UX\b/g, 'user interface and user experience')
+          .replace(/\bUI\b/g, 'user interface')
+          .replace(/\bUX\b/g, 'user experience')
+          .replace(/\bPWA\b/g, 'web app')
+          .replace(/\bAPI\b/g, 'A P I')
+          .replace(/\bURL\b/g, 'U R L')
+          .replace(/\be\.g\./gi, 'for example')
+          .replace(/\bi\.e\./gi, 'that is')
+          .replace(/\betc\./gi, 'etcetera');
+      }
+
+      function scrubTextForSpeech(text) {
+        if (!text) return '';
+        let cleaned = String(text).replace(/\r\n/g, '\n');
+
+        // Convert markdown links [label](url) -> label and strip raw URLs
+        cleaned = cleaned.replace(/\[([^\]]+)\]\((?:https?:\/\/|mailto:)[^)]+\)/gi, '$1');
+        cleaned = cleaned.replace(/https?:\/\/\S+/gi, '');
+
+        // Strip emojis, pictographs, variation selectors, and zero-width joiners
+        try {
+          cleaned = cleaned.replace(/[\p{Extended_Pictographic}\p{Emoji_Presentation}\uFE0F\u200D\u20E3]/gu, '');
+        } catch (_) {
+          cleaned = cleaned.replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]|\uFE0F|\u200D/g, '');
+        }
+
+        // Strip decorative symbols (• | № ⚠️ 💎 ♾️, ornamental dividers, box chars, arrows)
+        cleaned = cleaned
+          .replace(/[•·‧∙|｜¦]+/g, ', ')
+          .replace(/[№⚠️⚠💎♾★☆◆◇■□▪▫●○◈❖✦✧♡♥♦♣♠※§¶†‡°™®©►▶▸◀◂→←↑↓⇒⇐⇔━─═║╔╗╚╝╠╣╦╩╬]+/g, ' ');
+
+        // Process line-by-line so ALL-CAPS cover banners convert cleanly into sentence case
+        const rawLines = cleaned.split('\n');
+        const processedLines = [];
+
+        for (let rawLine of rawLines) {
+          let line = rawLine
+            .replace(/^\s*#{1,6}\s*/g, '')
+            .replace(/^\s*>\s?/g, '')
+            .replace(/^\s*[-*]\s+/g, '')
+            .replace(/[*_~`]+/g, '')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          if (!line) continue;
+
+          // Detect ALL-CAPS lines (cover banners, chapter headers) BEFORE expanding acronyms
+          const latinLetters = line.match(/[A-Za-z]/g) || [];
+          const isAllCapsLine = latinLetters.length >= 3 && !/[a-z]/.test(line);
+
+          // Expand technical abbreviations so TTS never mispronounces acronyms
+          line = expandSpeechAbbreviations(line);
+
+          if (isAllCapsLine) {
+            line = toNaturalSentenceCase(line);
+          } else {
+            // Also soften inline ALL-CAPS runs (3+ consecutive uppercase words inside normal prose)
+            line = line.replace(/\b[A-Z]{2,}(?:\s+[A-Z]{2,}){2,}\b/g, (match) => toNaturalSentenceCase(match));
+          }
+
+          // Clean up stray punctuation spacing left by stripped dividers
+          line = line
+            .replace(/^\s*[,;:.]+\s*/g, '')
+            .replace(/\s*,\s*,+/g, ', ')
+            .replace(/\s+([,.;:!?])/g, '$1')
+            .replace(/\s+/g, ' ')
+            .trim();
+
+          if (line) processedLines.push(line);
+        }
+
+        // Join lines smoothly, adding a clean sentence pause after unpunctuated headers/banners
+        let joined = '';
+        for (let i = 0; i < processedLines.length; i++) {
+          const cur = processedLines[i];
+          if (i < processedLines.length - 1 && !/[.!?。！？:;,—–]$/.test(cur)) {
+            joined += cur + '. ';
+          } else {
+            joined += cur + ' ';
+          }
+        }
+
+        return joined.replace(/\s+/g, ' ').trim();
+      }
+
+      function parseMovementsFromText(rawText) {
+        const normalized = (rawText || '').replace(/\r\n/g, '\n').trim();
+        if (!normalized) {
+          return [{ id: 0, title: 'Movement I — Sanctuary Scroll', content: '' }];
+        }
+
+        const lines = normalized.split('\n');
+        const headingRegex = /^(?:#{1,4}\s+(.+)|((?:movement|chapter|part|section|act|scene|prologue|epilogue|interlude|第[一二三四五六七八九十百0-9０-９]+[章節幕部回])(?:\s*[:—–\-.]?\s*.*)))$/i;
+
+        const movements = [];
+        let currentTitle = null;
+        let currentLines = [];
+
+        const pushCurrent = () => {
+          const content = currentLines.join('\n').trim();
+          if (!content && !currentTitle) return;
+          movements.push({
+            id: movements.length,
+            title: (currentTitle || `Movement ${movements.length + 1}`).replace(/^#+\s*/, '').trim(),
+            content
+          });
+        };
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          const match = trimmed.length > 0 && trimmed.length <= 140 ? trimmed.match(headingRegex) : null;
+          if (match) {
+            if (currentTitle !== null || currentLines.some((l) => l.trim().length > 0)) {
+              pushCurrent();
+            }
+            currentTitle = (match[1] || match[2] || trimmed).trim();
+            currentLines = [trimmed];
+          } else {
+            currentLines.push(line);
+          }
+        }
+        pushCurrent();
+
+        return movements.length > 0
+          ? movements
+          : [{ id: 0, title: 'Movement I — Sanctuary Scroll', content: normalized }];
+      }
+
+      function estimateSpokenWords(text) {
+        if (!text) return 0;
+        const cjkMatches = text.match(/[\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]/g);
+        const cjkWordEq = cjkMatches ? Math.ceil(cjkMatches.length / 2.5) : 0;
+        const nonCjk = text.replace(/[\u3040-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\uF900-\uFAFF]/g, ' ').trim();
+        const latinWords = nonCjk ? nonCjk.split(/\s+/).filter(Boolean).length : 0;
+        return latinWords + cjkWordEq;
+      }
+
+      function parseParagraphsAndChunks(text, minWords = 450, maxWords = 650) {
+        if (!text || !text.trim()) {
+          return { paragraphs: [], chunks: [] };
+        }
+
+        const rawParagraphs = text
+          .replace(/\r\n/g, '\n')
+          .split(/\n+/)
+          .map((p) => p.trim())
+          .filter(Boolean);
+
+        const paragraphs = [];
+        const chunks = [];
+        let currentTexts = [];
+        let currentWordCount = 0;
+
+        const flushChunk = () => {
+          const joined = currentTexts.join('\n\n').trim();
+          if (!joined) return;
+          chunks.push({ index: chunks.length, text: joined, wordCount: currentWordCount });
+          currentTexts = [];
+          currentWordCount = 0;
+        };
+
+        for (let pIdx = 0; pIdx < rawParagraphs.length; pIdx++) {
+          const para = rawParagraphs[pIdx];
+          const isHeading =
+            /^#{1,4}\s+/.test(para) ||
+            /^(?:movement|chapter|part|section|act|scene|prologue|epilogue|第[一二三四五六七八九十0-9０-９]+[章節幕部])\b/i.test(para);
+          const paraWords = estimateSpokenWords(para);
+
+          if (isHeading && currentWordCount >= 260) {
+            flushChunk();
+          }
+
+          if (paraWords <= maxWords) {
+            if (currentWordCount > 0 && (currentWordCount + paraWords > maxWords || currentWordCount >= minWords)) {
+              flushChunk();
+            }
+            const assignedChunkIdx = chunks.length;
+            currentTexts.push(para);
+            currentWordCount += paraWords;
+            paragraphs.push({
+              id: pIdx,
+              isHeading,
+              segments: [{ chunkIndex: assignedChunkIdx, text: para }]
+            });
+          } else {
+            const sentences = para.match(/[^.!?。！？]+(?:[.!?。！？]+["'”’」』)\]]*|$)/g) || [para];
+            const paraSegments = [];
+            let segSentences = [];
+            let segChunkIdx = chunks.length;
+
+            const commitSegment = () => {
+              const segText = segSentences.join(' ').trim();
+              if (!segText) return;
+              paraSegments.push({ chunkIndex: segChunkIdx, text: segText });
+              currentTexts.push(segText);
+              segSentences = [];
+            };
+
+            for (const rawSent of sentences) {
+              const sent = rawSent.trim();
+              if (!sent) continue;
+              const sentWords = estimateSpokenWords(sent);
+              if (currentWordCount > 0 && (currentWordCount + sentWords > maxWords || currentWordCount >= minWords)) {
+                commitSegment();
+                flushChunk();
+                segChunkIdx = chunks.length;
+              }
+              segSentences.push(sent);
+              currentWordCount += sentWords;
+            }
+            commitSegment();
+            if (paraSegments.length > 0) {
+              paragraphs.push({ id: pIdx, isHeading, segments: paraSegments });
+            }
+          }
+        }
+        flushChunk();
+        return { paragraphs, chunks };
+      }
+
+      // ======================================================================
+      // AUDIO, BASE64 PCM -> WAV & ZERO-UPLOAD .DOCX PARSER
+      // ======================================================================
+      function base64ToUint8Array(base64) {
+        const binaryStr = window.atob(base64);
+        const len = binaryStr.length;
+        const bytes = new Uint8Array(len);
+        for (let i = 0; i < len; i++) {
+          bytes[i] = binaryStr.charCodeAt(i);
+        }
+        return bytes;
+      }
+
+      function pcm16BytesToWavBlob(pcmBytes, sampleRate = 24000, numChannels = 1) {
+        const alignedLen = pcmBytes.byteLength - (pcmBytes.byteLength % 2);
+        const buffer = new ArrayBuffer(44 + alignedLen);
+        const view = new DataView(buffer);
+        const writeStr = (offset, str) => {
+          for (let i = 0; i < str.length; i++) view.setUint8(offset + i, str.charCodeAt(i));
+        };
+        writeStr(0, 'RIFF');
+        view.setUint32(4, 36 + alignedLen, true);
+        writeStr(8, 'WAVE');
+        writeStr(12, 'fmt ');
+        view.setUint32(16, 16, true);
+        view.setUint16(20, 1, true);
+        view.setUint16(22, numChannels, true);
+        view.setUint32(24, sampleRate, true);
+        view.setUint32(28, sampleRate * numChannels * 2, true);
+        view.setUint16(32, numChannels * 2, true);
+        view.setUint16(34, 16, true);
+        writeStr(36, 'data');
+        view.setUint32(40, alignedLen, true);
+        new Uint8Array(buffer, 44).set(pcmBytes.subarray(0, alignedLen));
+        return new Blob([buffer], { type: 'audio/wav' });
+      }
+
+      async function inflateRawBytes(compressedBytes) {
+        if (typeof DecompressionStream === 'undefined') {
+          throw new Error('Your browser does not support native ZIP decompression for .docx files.');
+        }
+        const stream = new Blob([compressedBytes]).stream().pipeThrough(new DecompressionStream('deflate-raw'));
+        const buf = await new Response(stream).arrayBuffer();
+        return new Uint8Array(buf);
+      }
+
+      async function extractTextFromDocx(file) {
+        const arrayBuffer = await file.arrayBuffer();
+        const bytes = new Uint8Array(arrayBuffer);
+        const view = new DataView(arrayBuffer);
+
+        let eocdOffset = -1;
+        const minOffset = Math.max(0, bytes.length - 65557);
+        for (let i = bytes.length - 22; i >= minOffset; i--) {
+          if (view.getUint32(i, true) === 0x06054b50) {
+            eocdOffset = i;
+            break;
+          }
+        }
+        if (eocdOffset === -1) throw new Error('Invalid .docx archive — could not find ZIP directory.');
+
+        const cdSize = view.getUint32(eocdOffset + 12, true);
+        const cdOffset = view.getUint32(eocdOffset + 16, true);
+        const decoder = new TextDecoder('utf-8');
+
+        let ptr = cdOffset;
+        const cdEnd = Math.min(bytes.length, cdOffset + cdSize);
+        let docEntry = null;
+
+        while (ptr + 46 <= cdEnd) {
+          if (view.getUint32(ptr, true) !== 0x02014b50) break;
+          const method = view.getUint16(ptr + 10, true);
+          const compSize = view.getUint32(ptr + 20, true);
+          const nameLen = view.getUint16(ptr + 28, true);
+          const extraLen = view.getUint16(ptr + 30, true);
+          const commentLen = view.getUint16(ptr + 32, true);
+          const localOffset = view.getUint32(ptr + 42, true);
+          const fileName = decoder.decode(bytes.subarray(ptr + 46, ptr + 46 + nameLen));
+          if (fileName === 'word/document.xml') {
+            docEntry = { method, compSize, localOffset };
+            break;
+          }
+          ptr += 46 + nameLen + extraLen + commentLen;
+        }
+
+        if (!docEntry) throw new Error('Could not find word/document.xml inside this .docx file.');
+
+        const lOff = docEntry.localOffset;
+        if (view.getUint32(lOff, true) !== 0x04034b50) throw new Error('Corrupted .docx local file header.');
+        const localNameLen = view.getUint16(lOff + 26, true);
+        const localExtraLen = view.getUint16(lOff + 28, true);
+        const dataStart = lOff + 30 + localNameLen + localExtraLen;
+        const rawPayload = bytes.subarray(dataStart, dataStart + docEntry.compSize);
+
+        let xmlBytes;
+        if (docEntry.method === 0) xmlBytes = rawPayload;
+        else if (docEntry.method === 8) xmlBytes = await inflateRawBytes(rawPayload);
+        else throw new Error(`Unsupported .docx compression method (${docEntry.method}).`);
+
+        const xmlText = decoder.decode(xmlBytes);
+        const xmlDoc = new DOMParser().parseFromString(xmlText, 'application/xml');
+        const pNodes = Array.from(xmlDoc.getElementsByTagNameNS('*', 'p'));
+
+        const extractedParagraphs = [];
+        for (const pNode of pNodes) {
+          const pStyleNode = pNode.getElementsByTagNameNS('*', 'pStyle')[0];
+          const styleVal = pStyleNode?.getAttribute('w:val') || pStyleNode?.getAttribute('val') || '';
+          const isWordHeading = /heading|title/i.test(styleVal);
+
+          let paraText = '';
+          const walk = (node) => {
+            for (const child of node.childNodes) {
+              if (child.nodeType !== 1) continue;
+              const local = child.localName;
+              if (local === 't') paraText += child.textContent || '';
+              else if (local === 'tab') paraText += ' ';
+              else if (local === 'br' || local === 'cr') paraText += '\n';
+              else walk(child);
+            }
+          };
+          walk(pNode);
+
+          const cleanedPara = paraText.trim();
+          if (!cleanedPara) continue;
+          extractedParagraphs.push(isWordHeading && !cleanedPara.startsWith('#') ? `# ${cleanedPara}` : cleanedPara);
+        }
+
+        const fullText = extractedParagraphs.join('\n\n').trim();
+        if (!fullText) throw new Error('This .docx file appears to contain no readable text.');
+        return fullText;
+      }
+
+      function cropImageToSquareDataUrl(file, size = 256) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onerror = () => reject(new Error('Could not read the selected image.'));
+          reader.onload = () => {
+            const img = new Image();
+            img.onerror = () => reject(new Error('Invalid image file selected.'));
+            img.onload = () => {
+              const canvas = document.createElement('canvas');
+              canvas.width = size;
+              canvas.height = size;
+              const ctx = canvas.getContext('2d');
+              const minSide = Math.min(img.width, img.height);
+              const sx = (img.width - minSide) / 2;
+              const sy = (img.height - minSide) / 2;
+              ctx.drawImage(img, sx, sy, minSide, minSide, 0, 0, size, size);
+              try {
+                resolve(canvas.toDataURL('image/jpeg', 0.86));
+              } catch (err) {
+                reject(err);
+              }
+            };
+            img.src = reader.result;
+          };
+          reader.readAsDataURL(file);
+        });
+      }
+
+      function parseRateLimitSeconds(response, errMessage, errJson) {
+        const retryAfter = response?.headers?.get?.('Retry-After');
+        if (retryAfter) {
+          const parsed = parseFloat(retryAfter);
+          if (Number.isFinite(parsed) && parsed > 0) return Math.min(90, Math.max(5, Math.ceil(parsed)));
+        }
+        const details = errJson?.error?.details;
+        if (Array.isArray(details)) {
+          for (const d of details) {
+            if (typeof d?.retryDelay === 'string') {
+              const match = d.retryDelay.match(/(\d+(?:\.\d+)?)/);
+              if (match) return Math.min(90, Math.max(5, Math.ceil(parseFloat(match[1]))));
+            }
+          }
+        }
+        const textMatch = String(errMessage || '').match(/(?:retry|try again|wait)\s+(?:in|after)?\s*(\d+(?:\.\d+)?)\s*(?:s|sec|second)/i);
+        if (textMatch) return Math.min(90, Math.max(5, Math.ceil(parseFloat(textMatch[1]))));
+        return 22;
+      }
+
+      async function fetchWithBackoff(url, options, maxRetries = 2) {
+        let attempt = 0;
+        while (true) {
+          const response = await fetch(url, options);
+          if ((response.status === 503 || response.status === 500) && attempt < maxRetries) {
+            const delayMs = Math.pow(2, attempt) * 1000 + Math.random() * 250;
+            await new Promise((res) => setTimeout(res, delayMs));
+            attempt++;
+            continue;
+          }
+          return response;
+        }
+      }
+
+      async function synthesizeGeminiTTS({ text, apiKey, model, voiceName, stylePrompt }) {
+        if (!apiKey || !apiKey.trim()) throw new Error('NO_API_KEY');
+        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey.trim())}`;
+
+        const lockedStyle = stylePrompt || DELIVERY_PRESETS[0].prompt;
+        const promptText = `VOCAL CONSISTENCY LOCK: Maintain the exact same vocal identity, pitch, breathing rhythm, and steady warm Tokyo cadence from start to finish across every chunk. Never shift accent, vocal persona, or speed when transitioning between technical words, headers, Japanese phrases, or emotional prose. Voice direction — ${lockedStyle}. Read ONLY the passage below aloud smoothly and continuously with zero added commentary:\n\n${text}`;
+
+        const basePayload = {
+          contents: [{ parts: [{ text: promptText }] }],
+          generationConfig: {
+            temperature: 0.25,
+            responseModalities: ['AUDIO'],
+            speechConfig: {
+              voiceConfig: {
+                prebuiltVoiceConfig: { voiceName: voiceName || 'Aoede' }
+              }
+            }
+          }
+        };
+
+        // Include permissive safetySettings (BLOCK_NONE where supported), retrying cleanly if a model rejects the field
+        let response = await fetchWithBackoff(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ ...basePayload, safetySettings: PERMISSIVE_SAFETY_SETTINGS })
+        });
+
+        let errJson = null;
+        let errMsg = '';
+
+        if (!response.ok && response.status === 400) {
+          try {
+            errJson = await response.clone().json();
+            errMsg = errJson?.error?.message || '';
+          } catch (_) {}
+
+          if (/safety.?settings|block_none|unknown name|harm_category/i.test(errMsg)) {
+            errJson = null;
+            errMsg = '';
+            response = await fetchWithBackoff(endpoint, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(basePayload)
+            });
+          }
+        }
+
+        if (!response.ok) {
+          if (!errMsg) {
+            errMsg = `Gemini TTS error (${response.status})`;
+            try {
+              errJson = await response.json();
+              if (errJson?.error?.message) errMsg = errJson.error.message;
+            } catch (_) {}
+          }
+
+          const isRateLimited =
+            response.status === 429 ||
+            errJson?.error?.status === 'RESOURCE_EXHAUSTED' ||
+            /rate.?limit|quota|retry in \d+|resource_exhausted|too many requests/i.test(errMsg);
+
+          if (isRateLimited) {
+            const rateErr = new Error('FREE_TIER_PACING');
+            rateErr.isRateLimit = true;
+            rateErr.retrySeconds = parseRateLimitSeconds(response, errMsg, errJson);
+            rateErr.diagnosticLabel = `Rate limit (HTTP ${response.status})`;
+            throw rateErr;
+          }
+
+          const apiErr = new Error(errMsg);
+          if (/safety|prohibited|blocked|policy|recitation/i.test(errMsg)) {
+            apiErr.isCloudBlocked = true;
+            apiErr.diagnosticLabel = `Cloud safety filter (${errMsg.slice(0, 80)})`;
+          } else {
+            apiErr.diagnosticLabel = `Cloud API error (${response.status})`;
+          }
+          throw apiErr;
+        }
+
+        const result = await response.json();
+        const promptFeedback = result?.promptFeedback || {};
+        const candidate = result?.candidates?.[0] || {};
+        const parts = candidate?.content?.parts || [];
+        const audioPart = parts.find((p) => p.inlineData?.data);
+
+        if (!audioPart) {
+          const blockReason = promptFeedback.blockReason || '';
+          const finishReason = candidate.finishReason || '';
+          const ratings = candidate.safetyRatings || promptFeedback.safetyRatings || [];
+          const flaggedCats = ratings
+            .filter((r) => r?.blocked || /HIGH|MEDIUM/i.test(r?.probability || ''))
+            .map((r) => String(r.category || '').replace(/^HARM_CATEGORY_/, ''))
+            .filter(Boolean);
+
+          let diagnosticLabel = 'Empty cloud audio response (no audio data returned)';
+          if (blockReason) {
+            diagnosticLabel = `Cloud safety filter (blockReason: ${blockReason}${flaggedCats.length ? ` • ${flaggedCats.join(', ')}` : ''})`;
+          } else if (finishReason && /SAFETY|PROHIBITED|BLOCK|SPII|RECITATION|OTHER/i.test(finishReason)) {
+            const prefix = /RECITATION/i.test(finishReason)
+              ? 'Cloud recitation filter'
+              : /OTHER/i.test(finishReason)
+              ? 'Cloud content refusal'
+              : 'Cloud safety filter';
+            diagnosticLabel = `${prefix} (finishReason: ${finishReason}${flaggedCats.length ? ` • ${flaggedCats.join(', ')}` : ''})`;
+          } else if (finishReason) {
+            diagnosticLabel = `Empty cloud audio response (finishReason: ${finishReason})`;
+          }
+
+          const noAudioErr = new Error(diagnosticLabel);
+          noAudioErr.isCloudBlocked = true;
+          noAudioErr.isEmptyAudio = true;
+          noAudioErr.diagnosticLabel = diagnosticLabel;
+          noAudioErr.finishReason = finishReason;
+          noAudioErr.blockReason = blockReason;
+          throw noAudioErr;
+        }
+
+        const mimeType = (audioPart.inlineData.mimeType || 'audio/L16;rate=24000').toLowerCase();
+        const rawBytes = base64ToUint8Array(audioPart.inlineData.data);
+        let audioBlob;
+        if (
+          mimeType.includes('l16') ||
+          mimeType.includes('pcm') ||
+          (!mimeType.includes('wav') && !mimeType.includes('mp3') && !mimeType.includes('ogg') && !mimeType.includes('mpeg'))
+        ) {
+          const rateMatch = mimeType.match(/rate=(\d+)/);
+          const sampleRate = rateMatch ? parseInt(rateMatch[1], 10) : 24000;
+          audioBlob = pcm16BytesToWavBlob(rawBytes, sampleRate, 1);
+        } else {
+          audioBlob = new Blob([rawBytes], { type: mimeType });
+        }
+        return URL.createObjectURL(audioBlob);
+      }
+
+      function buildContractionBadges(casualData) {
+        if (!casualData) return [];
+        const combined = `${casualData.japanese || ''} ${casualData.romaji || ''} ${casualData.readingKana || ''}`;
+        const results = [];
+        const seenKeys = new Set();
+
+        if (Array.isArray(casualData.contractions)) {
+          for (const item of casualData.contractions) {
+            if (!item || !item.token) continue;
+            const key = item.token.toLowerCase().trim();
+            if (!seenKeys.has(key)) {
+              seenKeys.add(key);
+              results.push({
+                id: `ai_${key}`,
+                badge: item.token,
+                baseForm: item.baseForm || 'Standard spoken form',
+                meaning: item.meaning || 'Natural casual Japanese spoken contraction.',
+                vibe: item.vibe || 'Spoken Contraction'
+              });
+            }
+          }
+        }
+
+        for (const pat of CONTRACTION_PATTERNS) {
+          if (pat.regex.test(combined)) {
+            const alreadyCovered = results.some((r) => r.badge.toLowerCase().includes(pat.id) || pat.regex.test(r.badge));
+            if (!alreadyCovered) {
+              results.push({
+                id: `det_${pat.id}`,
+                badge: pat.badge,
+                baseForm: pat.baseForm,
+                meaning: pat.meaning,
+                vibe: pat.vibe
+              });
+            }
+          }
+        }
+        return results;
+      }
+
+      function findPreferredJapaneseFemaleVoice(voices) {
+        if (!voices || voices.length === 0) return null;
+        const jaVoices = voices.filter((v) => /ja[-_]?jp|^ja$/i.test(v.lang));
+        const femaleHints = /kyoko|haruka|nanami|sayaka|ayumi|o-ren|mizuki|mayu|shiori|female|woman|google 日本語|japanese.*female/i;
+        const preferredFemale = jaVoices.find((v) => femaleHints.test(v.name));
+        if (preferredFemale) return preferredFemale;
+        if (jaVoices.length > 0) return jaVoices[0];
+        const anyFemale = voices.find((v) => /female|samantha|aria|jenny|zira/i.test(v.name));
+        return anyFemale || voices[0];
+      }
+
+      // ======================================================================
+      // APPLICATION STATE
+      // ======================================================================
+      const state = {
+        theme: storageGet(STORAGE_KEYS.THEME, 'imperial_gold') === 'neon_makai' ? 'neon_makai' : 'imperial_gold',
+        activeTab: 'reader', // 'reader' | 'translator'
+        apiKey: storageGet(STORAGE_KEYS.API_KEY, ''),
+        ttsModel: storageGet(STORAGE_KEYS.TTS_MODEL, 'gemini-2.5-flash-preview-tts'),
+        ttsVoice: storageGet(STORAGE_KEYS.TTS_VOICE, 'Aoede'),
+        avatarUrl: storageGet(STORAGE_KEYS.AVATAR, ''),
+        showApiKey: false,
+
+        rawText: storageGet(STORAGE_KEYS.STORY_TEXT, SAMPLE_MEGA_SCROLL),
+        docFileName: '',
+        movements: [],
+        activeMovementIdx: 0,
+        movementsOpen: false,
+        pasteBoxOpen: true,
+        paragraphs: [],
+        chunks: [],
+        currentChunkIdx: 0,
+
+        scrubberEnabled: storageGet(STORAGE_KEYS.SCRUBBER, 'true') !== 'false',
+        autoFallback: storageGet(STORAGE_KEYS.AUTO_FALLBACK, 'true') !== 'false',
+        voiceEngine: storageGet(STORAGE_KEYS.ENGINE, 'gemini') === 'browser' ? 'browser' : 'gemini',
+        deliveryStyleId: storageGet(STORAGE_KEYS.DELIVERY_STYLE, DELIVERY_PRESETS[0].id),
+
+        browserVoices: [],
+        speechSynthSupported: typeof window !== 'undefined' && 'speechSynthesis' in window,
+        selectedBrowserVoiceURI: storageGet(STORAGE_KEYS.BROWSER_VOICE, ''),
+        browserRate: (() => {
+          const n = parseFloat(storageGet(STORAGE_KEYS.BROWSER_RATE, '0.88'));
+          return Number.isFinite(n) ? n : 0.88;
+        })(),
+        browserPitch: (() => {
+          const n = parseFloat(storageGet(STORAGE_KEYS.BROWSER_PITCH, '1.06'));
+          return Number.isFinite(n) ? n : 1.06;
+        })(),
+
+        playbackStatus: 'idle', // 'idle' | 'loading' | 'playing' | 'paused' | 'pacing'
+        pacingSecondsLeft: 0,
+        readerError: null,
+
+        translateInput: '',
+        translating: false,
+        translateError: null,
+        translationResult: null,
+        activeContractionId: null,
+        playingCardId: null,
+        loadingCardId: null,
+        copiedCardId: null,
+        showHistory: false,
+        transHistory: (() => {
+          try {
+            const parsed = JSON.parse(storageGet(STORAGE_KEYS.TRANS_HISTORY, '[]'));
+            return Array.isArray(parsed) ? parsed : [];
+          } catch (_) {
+            return [];
+          }
+        })()
+      };
+
+      // Persistent audio players for rock-solid Android Chrome continuity
+      const readerAudio = new Audio();
+      readerAudio.preload = 'auto';
+      const cardAudio = new Audio();
+      cardAudio.preload = 'auto';
+
+      let activeRunId = 0;
+      let cardRunId = 0;
+      let pacingTimer = null;
+      let toastTimer = null;
+      const chunkAudioCache = new Map();
+
+      // ======================================================================
+      // DOM REFERENCES
+      // ======================================================================
+      const $ = (id) => document.getElementById(id);
+
+      const els = {
+        metaThemeColor: $('meta-theme-color'),
+        inputAvatar: $('input-avatar'),
+        inputDocx: $('input-docx'),
+        btnAvatar: $('btn-avatar'),
+        headerAvatarInner: $('header-avatar-inner'),
+        avatarLiveDot: $('avatar-live-dot'),
+        headerKeyStatus: $('header-key-status'),
+        btnOpenSettings: $('btn-open-settings'),
+        settingsKeyDot: $('settings-key-dot'),
+        tabBtnReader: $('tab-btn-reader'),
+        tabBtnTranslator: $('tab-btn-translator'),
+        appMain: $('app-main'),
+        panelReader: $('panel-reader'),
+        panelTranslator: $('panel-translator'),
+        bottomDock: $('bottom-dock'),
+        toastWrap: $('toast-wrap'),
+        toastPill: $('toast-pill'),
+
+        btnOpenDocx: $('btn-open-docx'),
+        docxIconUpload: $('docx-icon-upload'),
+        docxIconSpin: $('docx-icon-spin'),
+        docxBtnLabel: $('docx-btn-label'),
+        docFilenameLabel: $('doc-filename-label'),
+        docWordcountBadge: $('doc-wordcount-badge'),
+        btnScrubber: $('btn-scrubber'),
+        scrubberLabel: $('scrubber-label'),
+        btnMovementsToggle: $('btn-movements-toggle'),
+        mvActiveCounter: $('mv-active-counter'),
+        mvActiveTitle: $('mv-active-title'),
+        mvTogglePill: $('mv-toggle-pill'),
+        mvChevron: $('mv-chevron'),
+        movementsList: $('movements-list'),
+
+        engineModelCaption: $('engine-model-caption'),
+        btnEngineGemini: $('btn-engine-gemini'),
+        btnEngineBrowser: $('btn-engine-browser'),
+        engineGeminiPanel: $('engine-gemini-panel'),
+        engineBrowserPanel: $('engine-browser-panel'),
+        geminiNokeyCard: $('gemini-nokey-card'),
+        geminiActiveControls: $('gemini-active-controls'),
+        btnInlineAddKey: $('btn-inline-add-key'),
+        btnInlineUseOffline: $('btn-inline-use-offline'),
+        selectDeliveryStyle: $('select-delivery-style'),
+        deliveryPromptPreview: $('delivery-prompt-preview'),
+        selectGeminiVoice: $('select-gemini-voice'),
+        browserSandboxTip: $('browser-sandbox-tip'),
+        btnSandboxOpenSettings: $('btn-sandbox-open-settings'),
+        btnMayaPreset: $('btn-maya-preset'),
+        selectBrowserVoice: $('select-browser-voice'),
+        sliderRate: $('slider-rate'),
+        speedValLabel: $('speed-val-label'),
+        sliderPitch: $('slider-pitch'),
+        pitchValLabel: $('pitch-val-label'),
+        btnAutoFallback: $('btn-auto-fallback'),
+        fallbackSubLabel: $('fallback-sub-label'),
+        fallbackSwitchTrack: $('fallback-switch-track'),
+        readerPacingBanner: $('reader-pacing-banner'),
+        readerPacingText: $('reader-pacing-text'),
+        btnCancelPacing: $('btn-cancel-pacing'),
+        readerErrorBanner: $('reader-error-banner'),
+        readerErrorText: $('reader-error-text'),
+        btnDismissReaderErr: $('btn-dismiss-reader-err'),
+
+        stageSubtitle: $('stage-subtitle'),
+        stageChunkPill: $('stage-chunk-pill'),
+        liveStoryStage: $('live-story-stage'),
+        btnTogglePastebox: $('btn-toggle-pastebox'),
+        pasteboxToggleLabel: $('pastebox-toggle-label'),
+        btnClearRaw: $('btn-clear-raw'),
+        rawTextInput: $('raw-text-input'),
+        rawStatsLabel: $('raw-stats-label'),
+        btnLoadSample: $('btn-load-sample'),
+
+        dockMetaNormal: $('dock-meta-normal'),
+        dockMvLabel: $('dock-mv-label'),
+        dockChunkLabel: $('dock-chunk-label'),
+        dockMetaPacing: $('dock-meta-pacing'),
+        dockPacingText: $('dock-pacing-text'),
+        dockPacingChunk: $('dock-pacing-chunk'),
+        dockProgressFill: $('dock-progress-fill'),
+        dockBtnRestart: $('dock-btn-restart'),
+        dockBtnPrev: $('dock-btn-prev'),
+        dockBtnPlay: $('dock-btn-play'),
+        dockPlayIcon: $('dock-play-icon'),
+        dockBtnNext: $('dock-btn-next'),
+        dockBtnStop: $('dock-btn-stop'),
+
+        btnToggleHistory: $('btn-toggle-history'),
+        historyBtnLabel: $('history-btn-label'),
+        historyList: $('history-list'),
+        translatorInput: $('translator-input'),
+        translatorExamples: $('translator-examples'),
+        btnTranslate: $('btn-translate'),
+        transIconSpark: $('trans-icon-spark'),
+        transIconSpin: $('trans-icon-spin'),
+        transBtnLabel: $('trans-btn-label'),
+        translatorErrorBox: $('translator-error-box'),
+        translatorResults: $('translator-results'),
+
+        settingsModal: $('settings-modal'),
+        settingsModalCard: $('settings-modal-card'),
+        btnCloseSettings: $('btn-close-settings'),
+        inputApiKey: $('input-api-key'),
+        btnToggleKeyVis: $('btn-toggle-key-vis'),
+        settingsModelList: $('settings-model-list'),
+        settingsAvatarPreview: $('settings-avatar-preview'),
+        settingsAvatarCaption: $('settings-avatar-caption'),
+        btnSettingsPickAvatar: $('btn-settings-pick-avatar'),
+        btnSettingsClearAvatar: $('btn-settings-clear-avatar'),
+        btnClearApiKey: $('btn-clear-api-key'),
+        btnSaveSettings: $('btn-save-settings')
+      };
+
+      // ======================================================================
+      // TOAST & UI RENDER HELPERS
+      // ======================================================================
+      function showToast(msg) {
+        els.toastPill.textContent = msg;
+        els.toastWrap.classList.remove('hidden');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => els.toastWrap.classList.add('hidden'), 3200);
+      }
+
+      function applyTheme(themeId) {
+        state.theme = themeId === 'neon_makai' ? 'neon_makai' : 'imperial_gold';
+        document.documentElement.setAttribute('data-theme', state.theme);
+        storageSet(STORAGE_KEYS.THEME, state.theme);
+        if (els.metaThemeColor) {
+          els.metaThemeColor.setAttribute('content', state.theme === 'neon_makai' ? '#030206' : '#08090D');
+        }
+      }
+
+      function updateAvatarPulse() {
+        const playing = state.playbackStatus === 'playing' || state.playingCardId !== null;
+        els.btnAvatar.classList.toggle('avatar-ring-playing', playing);
+        els.avatarLiveDot.classList.toggle('hidden', !playing);
+      }
+
+      function renderAvatar() {
+        if (state.avatarUrl) {
+          els.headerAvatarInner.innerHTML = `<img src="${escapeHtml(state.avatarUrl)}" alt="Custom Studio Avatar" />`;
+          els.settingsAvatarPreview.innerHTML = `<img src="${escapeHtml(state.avatarUrl)}" alt="Saved Avatar" style="width:100%;height:100%;object-fit:cover;" />`;
+          els.settingsAvatarCaption.textContent = 'Saved permanently on device';
+          els.btnSettingsClearAvatar.classList.remove('hidden');
+        } else {
+          els.headerAvatarInner.innerHTML = ICONS.camera;
+          els.settingsAvatarPreview.innerHTML = ICONS.camera;
+          els.settingsAvatarCaption.textContent = 'Tap to pick from gallery';
+          els.btnSettingsClearAvatar.classList.add('hidden');
+        }
+      }
+
+      function renderKeyStatus() {
+        const hasKey = Boolean(state.apiKey && state.apiKey.trim());
+        els.headerKeyStatus.textContent = hasKey ? 'Gemini Ready' : 'Key Needed';
+        els.headerKeyStatus.className = hasKey ? 'status-ready' : 'status-needed';
+        els.settingsKeyDot.classList.toggle('hidden', hasKey);
+        els.btnClearApiKey.classList.toggle('hidden', !hasKey);
+        renderVoiceEnginePanel();
+      }
+
+      function renderTabs() {
+        const isReader = state.activeTab === 'reader';
+        els.tabBtnReader.classList.toggle('active', isReader);
+        els.tabBtnTranslator.classList.toggle('active', !isReader);
+        els.panelReader.classList.toggle('hidden', !isReader);
+        els.panelTranslator.classList.toggle('hidden', isReader);
+        els.bottomDock.classList.toggle('hidden', !isReader);
+        els.appMain.classList.toggle('tab-translator-pad', !isReader);
+        if (isReader) autoSizeRawTextarea();
+      }
+
+      function autoSizeRawTextarea() {
+        if (!state.pasteBoxOpen) return;
+        const el = els.rawTextInput;
+        el.style.height = 'auto';
+        el.style.height = `${Math.max(340, el.scrollHeight + 4)}px`;
+      }
+
+      function rebuildMovementsAndStage(preserveMovement = true) {
+        state.movements = parseMovementsFromText(state.rawText);
+        if (!preserveMovement || state.activeMovementIdx >= state.movements.length) {
+          state.activeMovementIdx = 0;
+        }
+
+        const activeMv = state.movements[state.activeMovementIdx] || { id: 0, title: 'Movement I', content: '' };
+        const parsed = parseParagraphsAndChunks(activeMv.content, 450, 650);
+        state.paragraphs = parsed.paragraphs;
+        state.chunks = parsed.chunks;
+
+        if (state.currentChunkIdx >= state.chunks.length) {
+          state.currentChunkIdx = 0;
+        }
+
+        // Update document stats
+        const words = (state.rawText || '').trim().split(/\s+/).filter(Boolean).length;
+        els.docFilenameLabel.textContent = state.docFileName || 'Active Studio Scroll';
+        els.docWordcountBadge.textContent = `${words.toLocaleString()} words`;
+        els.rawStatsLabel.textContent = `${state.rawText.length.toLocaleString()} chars • ${words.toLocaleString()} words`;
+
+        renderMovementsAccordion();
+        renderStoryStage();
+        renderPlaybackUI();
+      }
+
+      function renderMovementsAccordion() {
+        const total = state.movements.length;
+        const activeMv = state.movements[state.activeMovementIdx] || { title: 'Movement I' };
+        els.mvActiveCounter.textContent = `Movement ${state.activeMovementIdx + 1} of ${total}`;
+        els.mvActiveTitle.textContent = activeMv.title;
+        els.mvTogglePill.textContent = state.movementsOpen ? 'Hide' : 'Chapters';
+        els.mvChevron.innerHTML = state.movementsOpen ? ICONS.chevUp : ICONS.chevDown;
+        els.btnMovementsToggle.setAttribute('aria-expanded', String(state.movementsOpen));
+        els.movementsList.classList.toggle('hidden', !state.movementsOpen);
+
+        els.movementsList.innerHTML = state.movements
+          .map((mv, idx) => {
+            const isSel = idx === state.activeMovementIdx;
+            return `<button type="button" class="mv-item ${isSel ? 'selected' : ''}" data-mv-idx="${idx}">
+              <span class="mv-num">${idx + 1}</span>
+              <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(mv.title)}</span>
+            </button>`;
+          })
+          .join('');
+      }
+
+      function renderStoryStage() {
+        const activeMv = state.movements[state.activeMovementIdx] || { title: 'Movement I' };
+        els.stageSubtitle.textContent = `${activeMv.title} • Tap any chunk to jump & play (~450–650 word batches)`;
+
+        if (state.paragraphs.length === 0) {
+          els.liveStoryStage.innerHTML = `
+            <div style="min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;" class="text-sec">
+              ${ICONS.bookEmpty}
+              <p style="margin:0;font-size:14px;font-weight:600;">Your Live Story Stage is empty.</p>
+              <p style="margin:6px 0 0;font-size:12px;opacity:0.78;">Open a .docx Mega-Scroll above or paste text in the Raw Text Paste Box below.</p>
+            </div>`;
+          return;
+        }
+
+        const html = state.paragraphs
+          .map((para) => {
+            const spans = para.segments
+              .map((seg) => {
+                const isAct = seg.chunkIndex === state.currentChunkIdx;
+                return `<span class="chunk-span ${isAct ? 'is-active' : ''}" data-chunk-idx="${seg.chunkIndex}">${escapeHtml(seg.text)}</span>`;
+              })
+              .join('');
+            return `<p class="${para.isHeading ? 'story-heading' : ''}">${spans}</p>`;
+          })
+          .join('');
+
+        els.liveStoryStage.innerHTML = html;
+      }
+
+      // Fast, zero-scroll-jump chunk highlight updater
+      function highlightActiveChunkOnly() {
+        const spans = els.liveStoryStage.querySelectorAll('.chunk-span');
+        spans.forEach((sp) => {
+          const idx = parseInt(sp.getAttribute('data-chunk-idx'), 10);
+          sp.classList.toggle('is-active', idx === state.currentChunkIdx);
+        });
+      }
+
+      function renderScrubberToggle() {
+        els.scrubberLabel.textContent = `Scrubber: ${state.scrubberEnabled ? 'ON' : 'OFF'}`;
+        els.btnScrubber.setAttribute('aria-pressed', String(state.scrubberEnabled));
+        els.btnScrubber.className = state.scrubberEnabled ? 'pill-glow' : 'btn-ghost';
+        els.btnScrubber.style.minHeight = '34px';
+        els.btnScrubber.style.padding = '4px 12px';
+        els.btnScrubber.style.fontSize = '11px';
+        els.btnScrubber.style.borderRadius = '9999px';
+      }
+
+      function renderAutoFallbackToggle() {
+        const on = state.autoFallback;
+        els.btnAutoFallback.setAttribute('aria-checked', String(on));
+        els.fallbackSwitchTrack.classList.toggle('is-on', on);
+        els.fallbackSubLabel.textContent = on
+          ? 'ON — Speaks blocked chunks offline & resumes Gemini next'
+          : 'OFF — Stops playback if Gemini refuses or returns empty audio';
+      }
+
+      function renderVoiceEnginePanel() {
+        const isGemini = state.voiceEngine === 'gemini';
+        const hasKey = Boolean(state.apiKey && state.apiKey.trim());
+
+        els.btnEngineGemini.classList.toggle('active', isGemini);
+        els.btnEngineBrowser.classList.toggle('active', !isGemini);
+        els.engineGeminiPanel.classList.toggle('hidden', !isGemini);
+        els.engineBrowserPanel.classList.toggle('hidden', isGemini);
+        els.engineModelCaption.textContent = isGemini ? state.ttsModel : 'Offline SpeechSynthesis';
+
+        els.geminiNokeyCard.classList.toggle('hidden', hasKey);
+        els.geminiActiveControls.classList.toggle('hidden', !hasKey);
+
+        const activePreset = DELIVERY_PRESETS.find((p) => p.id === state.deliveryStyleId) || DELIVERY_PRESETS[0];
+        els.selectDeliveryStyle.value = activePreset.id;
+        els.deliveryPromptPreview.textContent = `“${activePreset.prompt}”`;
+        els.selectGeminiVoice.value = state.ttsVoice;
+
+        const noOfflineVoices = !state.speechSynthSupported || state.browserVoices.length === 0;
+        els.browserSandboxTip.classList.toggle('hidden', !noOfflineVoices);
+
+        els.sliderRate.value = String(state.browserRate);
+        els.speedValLabel.textContent = `${state.browserRate.toFixed(2)}x`;
+        els.sliderPitch.value = String(state.browserPitch);
+        els.pitchValLabel.textContent = state.browserPitch.toFixed(2);
+      }
+
+      function renderBrowserVoiceOptions() {
+        if (state.browserVoices.length === 0) {
+          els.selectBrowserVoice.innerHTML = `<option value="">Default Device Japanese Voice (ja-JP)</option>`;
+        } else {
+          els.selectBrowserVoice.innerHTML = state.browserVoices
+            .map((v) => `<option value="${escapeHtml(v.voiceURI)}">${escapeHtml(v.name)} (${escapeHtml(v.lang)})</option>`)
+            .join('');
+          els.selectBrowserVoice.value = state.selectedBrowserVoiceURI;
+        }
+        renderVoiceEnginePanel();
+      }
+
+      function renderPlaybackUI() {
+        const totalChunks = state.chunks.length;
+        const activeMv = state.movements[state.activeMovementIdx] || { title: 'Movement I' };
+        const chunkText = totalChunks > 0
+          ? `Chunk ${Math.min(state.currentChunkIdx + 1, totalChunks)} / ${totalChunks}`
+          : '0 / 0';
+        const pct = totalChunks > 0
+          ? Math.min(100, Math.round(((state.currentChunkIdx + 1) / totalChunks) * 100))
+          : 0;
+
+        els.stageChunkPill.textContent = chunkText;
+        els.dockChunkLabel.textContent = totalChunks > 0 ? chunkText : 'Ready';
+        els.dockPacingChunk.textContent = chunkText;
+        els.dockMvLabel.textContent = state.movements.length > 1
+          ? `M${state.activeMovementIdx + 1}/${state.movements.length} • ${activeMv.title}`
+          : activeMv.title;
+        els.dockProgressFill.style.width = `${pct}%`;
+
+        // Pacing UI
+        const isPacing = state.playbackStatus === 'pacing' && state.pacingSecondsLeft > 0;
+        const pacingMsg = `Free Tier pacing — resuming automatically in ${state.pacingSecondsLeft}s...`;
+        els.readerPacingBanner.classList.toggle('hidden', !isPacing);
+        els.readerPacingText.textContent = pacingMsg;
+        els.dockMetaNormal.classList.toggle('hidden', isPacing);
+        els.dockMetaPacing.classList.toggle('hidden', !isPacing);
+        els.dockPacingText.textContent = pacingMsg;
+
+        // Error Banner
+        if (state.readerError) {
+          els.readerErrorText.textContent = state.readerError;
+          els.readerErrorBanner.classList.remove('hidden');
+        } else {
+          els.readerErrorBanner.classList.add('hidden');
+        }
+
+        // Play/Pause Icon
+        if (state.playbackStatus === 'loading') {
+          els.dockPlayIcon.innerHTML = ICONS.loader;
+          els.dockBtnPlay.setAttribute('aria-label', 'Loading audio');
+        } else if (state.playbackStatus === 'pacing') {
+          els.dockPlayIcon.innerHTML = ICONS.clock;
+          els.dockBtnPlay.setAttribute('aria-label', 'Cancel pacing');
+        } else if (state.playbackStatus === 'playing') {
+          els.dockPlayIcon.innerHTML = ICONS.pause;
+          els.dockBtnPlay.setAttribute('aria-label', 'Pause');
+        } else {
+          els.dockPlayIcon.innerHTML = `<span style="margin-left:2px;display:inline-flex;">${ICONS.play}</span>`;
+          els.dockBtnPlay.setAttribute('aria-label', 'Play');
+        }
+
+        highlightActiveChunkOnly();
+        updateAvatarPulse();
+      }
+
+      // ======================================================================
+      // AUDIO ENGINE CONTROLLERS (TAB 1 CHUNK PLAYER)
+      // ======================================================================
+      function clearPacingTimer() {
+        if (pacingTimer) {
+          clearInterval(pacingTimer);
+          pacingTimer = null;
+        }
+        state.pacingSecondsLeft = 0;
+      }
+
+      function stopCardAudio() {
+        cardRunId++;
+        cardAudio.pause();
+        cardAudio.onended = null;
+        cardAudio.onerror = null;
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
+        state.playingCardId = null;
+        state.loadingCardId = null;
+        updateAvatarPulse();
+        if (state.translationResult) renderTranslationResults();
+      }
+
+      function stopReaderAudio(resetCursor = false) {
+        activeRunId++;
+        clearPacingTimer();
+        readerAudio.pause();
+        readerAudio.onended = null;
+        readerAudio.onerror = null;
+        readerAudio.ontimeupdate = null;
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
+        state.playbackStatus = 'idle';
+        if (resetCursor) state.currentChunkIdx = 0;
+        renderPlaybackUI();
+      }
+
+      function getSpokenText(rawChunkText) {
+        return state.scrubberEnabled ? scrubTextForSpeech(rawChunkText) : (rawChunkText || '').trim();
+      }
+
+      function cacheAudioBlobUrl(key, url) {
+        if (chunkAudioCache.size > 40) {
+          const oldestKey = chunkAudioCache.keys().next().value;
+          const oldUrl = chunkAudioCache.get(oldestKey);
+          if (oldUrl) URL.revokeObjectURL(oldUrl);
+          chunkAudioCache.delete(oldestKey);
+        }
+        chunkAudioCache.set(key, url);
+      }
+
+      async function prefetchNextChunk(nextIdx, key, model, voice, stylePrompt) {
+        if (!key || nextIdx >= state.chunks.length) return;
+        const text = getSpokenText(state.chunks[nextIdx]?.text);
+        if (!text) return;
+        const cacheKey = `${model}|${voice}|${stylePrompt}|${text}`;
+        if (chunkAudioCache.has(cacheKey)) return;
+        try {
+          const blobUrl = await synthesizeGeminiTTS({ text, apiKey: key, model, voiceName: voice, stylePrompt });
+          cacheAudioBlobUrl(cacheKey, blobUrl);
+        } catch (_) {
+          // Silent skip on background prefetch
+        }
+      }
+
+      // Reusable Offline Browser TTS chunk speaker (used by Engine B & seamless Cloud Auto-Fallback)
+      function speakChunkWithOfflineBrowserTTS({ spokenText, runId, clampedIndex, isFallback = false }) {
+        if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+          state.speechSynthSupported = false;
+          state.readerError = isFallback
+            ? 'Cloud chunk was blocked and Offline Browser SpeechSynthesis is unavailable in this browser.'
+            : 'Offline Browser SpeechSynthesis is not supported in this browser. Add your free Google AI Studio API Key in Settings for Native Gemini Neural TTS.';
+          state.playbackStatus = 'idle';
+          renderVoiceEnginePanel();
+          renderPlaybackUI();
+          return;
+        }
+
+        const subSentences = (spokenText.match(/[^.!?。！？]+(?:[.!?。！？]+["'”’」』)\]]*|$)/g) || [spokenText])
+          .map((s) => s.trim())
+          .filter(Boolean);
+        const chosenVoice =
+          state.browserVoices.find((v) => v.voiceURI === state.selectedBrowserVoiceURI) ||
+          findPreferredJapaneseFemaleVoice(state.browserVoices);
+
+        const speakSub = (subIdx) => {
+          if (activeRunId !== runId) return;
+          if (subIdx >= subSentences.length) {
+            // Automatically advances to the next chunk (seamlessly resuming Gemini Neural TTS if in Gemini mode!)
+            if (clampedIndex + 1 < state.chunks.length) {
+              playChunkAtIndex(clampedIndex + 1);
+            } else {
+              state.playbackStatus = 'idle';
+              renderPlaybackUI();
+              showToast('Finished Movement playback');
+            }
+            return;
+          }
+
+          const utt = new SpeechSynthesisUtterance(subSentences[subIdx]);
+          if (chosenVoice) {
+            utt.voice = chosenVoice;
+            utt.lang = chosenVoice.lang;
+          } else {
+            utt.lang = 'ja-JP';
+          }
+          utt.rate = state.browserRate;
+          utt.pitch = state.browserPitch;
+
+          utt.onstart = () => {
+            if (activeRunId !== runId) return;
+            state.playbackStatus = 'playing';
+            renderPlaybackUI();
+          };
+          utt.onend = () => {
+            if (activeRunId !== runId) return;
+            speakSub(subIdx + 1);
+          };
+          utt.onerror = (ev) => {
+            if (activeRunId !== runId) return;
+            if (ev?.error === 'canceled' || ev?.error === 'interrupted') return;
+            if (isFallback && clampedIndex + 1 < state.chunks.length) {
+              showToast(`Offline fallback skipped (${ev?.error || 'error'}) — resuming Gemini on next chunk`);
+              playChunkAtIndex(clampedIndex + 1);
+              return;
+            }
+            state.readerError = `Offline voice error: ${ev?.error || 'unknown error'}`;
+            state.playbackStatus = 'idle';
+            renderPlaybackUI();
+          };
+
+          window.speechSynthesis.speak(utt);
+        };
+
+        state.playbackStatus = 'playing';
+        renderPlaybackUI();
+        speakSub(0);
+      }
+
+      async function playChunkAtIndex(index) {
+        if (state.chunks.length === 0) {
+          state.readerError = 'Add text or load a .docx Mega-Scroll first to begin playback.';
+          renderPlaybackUI();
+          return;
+        }
+
+        const clampedIndex = Math.max(0, Math.min(index, state.chunks.length - 1));
+        state.readerError = null;
+        clearPacingTimer();
+        stopCardAudio();
+
+        activeRunId++;
+        const runId = activeRunId;
+
+        readerAudio.pause();
+        readerAudio.onended = null;
+        readerAudio.onerror = null;
+        readerAudio.ontimeupdate = null;
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
+
+        state.currentChunkIdx = clampedIndex;
+        const spokenText = getSpokenText(state.chunks[clampedIndex]?.text);
+
+        if (!spokenText) {
+          if (clampedIndex + 1 < state.chunks.length) playChunkAtIndex(clampedIndex + 1);
+          else {
+            state.playbackStatus = 'idle';
+            renderPlaybackUI();
+          }
+          return;
+        }
+
+        const hasApiKey = Boolean(state.apiKey && state.apiKey.trim());
+        if (state.voiceEngine === 'gemini' && !hasApiKey) {
+          state.readerError = 'Native Gemini Neural TTS needs your free Google AI Studio API Key. Tap Settings (gear icon) to save it, or switch to Offline Browser TTS.';
+          state.playbackStatus = 'idle';
+          renderPlaybackUI();
+          return;
+        }
+
+        if (state.voiceEngine === 'gemini' && hasApiKey) {
+          const activePreset = DELIVERY_PRESETS.find((p) => p.id === state.deliveryStyleId) || DELIVERY_PRESETS[0];
+          const stylePrompt = activePreset.prompt;
+          const cacheKey = `${state.ttsModel}|${state.ttsVoice}|${stylePrompt}|${spokenText}`;
+          let blobUrl = chunkAudioCache.get(cacheKey);
+
+          if (!blobUrl) {
+            state.playbackStatus = 'loading';
+            renderPlaybackUI();
+            try {
+              blobUrl = await synthesizeGeminiTTS({
+                text: spokenText,
+                apiKey: state.apiKey.trim(),
+                model: state.ttsModel,
+                voiceName: state.ttsVoice,
+                stylePrompt
+              });
+              cacheAudioBlobUrl(cacheKey, blobUrl);
+            } catch (err) {
+              if (activeRunId !== runId) return;
+
+              if (err?.isRateLimit || /429|rate.?limit|quota|retry in \d+|resource_exhausted/i.test(err?.message || '')) {
+                const waitSecs = err?.retrySeconds || parseRateLimitSeconds(null, err?.message, null);
+                state.readerError = null;
+                state.playbackStatus = 'pacing';
+                state.pacingSecondsLeft = waitSecs;
+                showToast(`Rate limit reached — resuming Chunk ${clampedIndex + 1} in ${waitSecs}s`);
+                renderPlaybackUI();
+
+                let remaining = waitSecs;
+                pacingTimer = setInterval(() => {
+                  if (activeRunId !== runId) {
+                    clearPacingTimer();
+                    return;
+                  }
+                  remaining -= 1;
+                  if (remaining <= 0) {
+                    clearPacingTimer();
+                    playChunkAtIndex(clampedIndex);
+                  } else {
+                    state.pacingSecondsLeft = remaining;
+                    renderPlaybackUI();
+                  }
+                }, 1000);
+                return;
+              }
+
+              // Smarter diagnostics + seamless Auto-Fallback to Offline Browser TTS for blocked/empty chunks
+              const diag = err?.diagnosticLabel || err?.message || 'Gemini TTS request failed.';
+              if ((err?.isCloudBlocked || err?.isEmptyAudio) && state.autoFallback) {
+                state.readerError = null;
+                showToast(`${diag} on Chunk ${clampedIndex + 1} — playing Offline Voice, resuming Gemini next`);
+                speakChunkWithOfflineBrowserTTS({
+                  spokenText,
+                  runId,
+                  clampedIndex,
+                  isFallback: true
+                });
+                return;
+              }
+
+              showToast(diag);
+              state.readerError = `${diag}${
+                state.ttsModel !== 'gemini-2.5-flash-preview-tts'
+                  ? ' Tip: Try selecting gemini-2.5-flash-preview-tts in Settings or enable Auto-Fallback.'
+                  : ''
+              }`;
+              state.playbackStatus = 'idle';
+              renderPlaybackUI();
+              return;
+            }
+          }
+
+          if (activeRunId !== runId) return;
+
+          try {
+            readerAudio.src = blobUrl;
+            let nextPrefetchFired = false;
+
+            readerAudio.ontimeupdate = () => {
+              if (
+                !nextPrefetchFired &&
+                activeRunId === runId &&
+                readerAudio.duration > 15 &&
+                readerAudio.currentTime >= readerAudio.duration * 0.55
+              ) {
+                nextPrefetchFired = true;
+                prefetchNextChunk(clampedIndex + 1, state.apiKey.trim(), state.ttsModel, state.ttsVoice, stylePrompt);
+              }
+            };
+
+            readerAudio.onended = () => {
+              if (activeRunId !== runId) return;
+              if (clampedIndex + 1 < state.chunks.length) {
+                playChunkAtIndex(clampedIndex + 1);
+              } else {
+                state.playbackStatus = 'idle';
+                renderPlaybackUI();
+                showToast('Finished Movement playback');
+              }
+            };
+
+            readerAudio.onerror = () => {
+              if (activeRunId !== runId) return;
+              state.readerError = 'Audio playback interrupted. Tap Play to retry.';
+              state.playbackStatus = 'idle';
+              renderPlaybackUI();
+            };
+
+            await readerAudio.play();
+            if (activeRunId !== runId) {
+              readerAudio.pause();
+              return;
+            }
+            state.playbackStatus = 'playing';
+            renderPlaybackUI();
+          } catch (_) {
+            if (activeRunId !== runId) return;
+            state.readerError = 'Tap Play once more to start audio playback.';
+            state.playbackStatus = 'idle';
+            renderPlaybackUI();
+          }
+        } else {
+          // ENGINE B: INSTANT OFFLINE BROWSER TTS
+          speakChunkWithOfflineBrowserTTS({
+            spokenText,
+            runId,
+            clampedIndex,
+            isFallback: false
+          });
+        }
+      }
+
+      // ======================================================================
+      // TAB 2: 3-REGISTER TRANSLATOR LOGIC & RENDERING
+      // ======================================================================
+      function renderHistoryUI() {
+        const count = state.transHistory.length;
+        els.btnToggleHistory.classList.toggle('hidden', count === 0);
+        els.historyBtnLabel.textContent = `Recent (${count})`;
+        els.historyList.classList.toggle('hidden', !state.showHistory || count === 0);
+
+        els.historyList.innerHTML = state.transHistory
+          .map(
+            (item, idx) => `
+            <button type="button" data-history-idx="${idx}" style="width:100%;min-height:38px;padding:8px 12px;border-radius:12px;text-align:left;font-size:12px;display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--text-primary);background:rgba(255,255,255,0.03);">
+              <span style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(item.sourceEnglish)}</span>
+              <span class="accent-muted" style="flex-shrink:0;font-size:10.5px;font-weight:600;">Load</span>
+            </button>`
+          )
+          .join('');
+      }
+
+      function renderTranslateError() {
+        if (!state.translateError) {
+          els.translatorErrorBox.classList.add('hidden');
+          els.translatorErrorBox.innerHTML = '';
+          return;
+        }
+        els.translatorErrorBox.classList.remove('hidden');
+        if (state.translateError === 'NO_API_KEY') {
+          els.translatorErrorBox.innerHTML = `
+            <div class="card-inner" style="padding:16px;display:flex;flex-direction:column;gap:10px;">
+              <p style="margin:0;font-size:12px;line-height:1.55;">
+                <strong>Google AI Studio API Key required.</strong> Tap below to paste your free key (takes 30 seconds at aistudio.google.com, no credit card needed). It stays saved privately on your phone.
+              </p>
+              <button type="button" id="btn-trans-open-settings" class="btn-primary" style="min-height:40px;padding:8px 16px;font-size:12px;border-radius:12px;align-self:flex-start;">
+                <span>Open Settings &amp; Paste Free Key</span>
+              </button>
+            </div>`;
+          const openBtn = $('btn-trans-open-settings');
+          if (openBtn) openBtn.addEventListener('click', openSettingsModal);
+        } else {
+          els.translatorErrorBox.innerHTML = `
+            <div class="error-banner">
+              <div style="flex:1;word-break:break-word;">${escapeHtml(state.translateError)}</div>
+            </div>`;
+        }
+      }
+
+      function renderTranslationResults() {
+        if (!state.translationResult) {
+          els.translatorResults.classList.add('hidden');
+          els.translatorResults.innerHTML = '';
+          return;
+        }
+        els.translatorResults.classList.remove('hidden');
+
+        const res = state.translationResult;
+        const contractions = buildContractionBadges(res.casual);
+
+        const buildPlayBtnHtml = (regId) => {
+          const isLoading = state.loadingCardId === regId;
+          const isPlaying = state.playingCardId === regId;
+          const btnClass = isPlaying ? 'btn-primary' : 'btn-secondary';
+          const icon = isLoading ? ICONS.loaderSm : isPlaying ? ICONS.stopSm : ICONS.playSm;
+          const label = isPlaying ? 'Stop' : 'Play';
+          return `<button type="button" class="${btnClass}" data-play-reg="${regId}" style="min-height:42px;padding:8px 14px;font-size:12px;border-radius:12px;">${icon}<span>${label}</span></button>`;
+        };
+
+        const buildCopyBtnHtml = (regId) => {
+          const isCopied = state.copiedCardId === regId;
+          return `<button type="button" class="btn-ghost" data-copy-reg="${regId}" style="width:40px;height:40px;border-radius:12px;" aria-label="Copy ${regId} Japanese">${isCopied ? ICONS.checkGreen : ICONS.copy}</button>`;
+        };
+
+        let contractionsHtml = '';
+        if (contractions.length > 0) {
+          const pills = contractions
+            .map((c) => {
+              const isOpen = state.activeContractionId === c.id;
+              return `<button type="button" class="contraction-pill ${isOpen ? 'is-open' : ''}" data-contraction-id="${escapeHtml(c.id)}"><span>${escapeHtml(c.badge)}</span>${ICONS.info}</button>`;
+            })
+            .join('');
+
+          let tooltipHtml = '';
+          if (state.activeContractionId) {
+            const active = contractions.find((c) => c.id === state.activeContractionId);
+            if (active) {
+              tooltipHtml = `
+                <div class="result-inner" style="padding:12px 14px;display:flex;flex-direction:column;gap:6px;font-size:12px;">
+                  <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;">
+                    <span class="accent" style="font-weight:700;">${escapeHtml(active.badge)} ← ${escapeHtml(active.baseForm)}</span>
+                    <span class="btn-ghost" style="font-size:10px;padding:2px 8px;border-radius:9999px;text-transform:uppercase;">${escapeHtml(active.vibe)}</span>
+                  </div>
+                  <p style="margin:0;line-height:1.55;">${escapeHtml(active.meaning)}</p>
+                </div>`;
+            }
+          }
+
+          contractionsHtml = `
+            <div style="display:flex;flex-direction:column;gap:8px;">
+              <div style="display:flex;align-items:center;gap:6px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;opacity:0.85;">
+                ${ICONS.spark}
+                <span>Detected Contractions &amp; Danseigo (Tap for nuance)</span>
+              </div>
+              <div class="chip-wrap">${pills}</div>
+              ${tooltipHtml}
+            </div>`;
+        }
+
+        const buildCard = (regId, badgeHtml, vibeLine, data, extraHtml = '', anchorId = '') => `
+          <article ${anchorId ? `id="${anchorId}"` : ''} class="result-card stack-12">
+            <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:12px;">
+              <div style="min-width:0;">
+                ${badgeHtml}
+                <p class="sub-caption" style="margin-top:6px;">${escapeHtml(vibeLine)}</p>
+              </div>
+              <div style="display:flex;align-items:center;gap:8px;flex-shrink:0;">
+                ${buildCopyBtnHtml(regId)}
+                ${buildPlayBtnHtml(regId)}
+              </div>
+            </div>
+
+            <div class="result-inner">
+              <p class="jp-main">${escapeHtml(data?.japanese || '')}</p>
+              ${
+                data?.readingKana && data.readingKana !== data.japanese
+                  ? `<p class="jp-kana">${escapeHtml(data.readingKana)}</p>`
+                  : ''
+              }
+              <p class="jp-romaji">${escapeHtml(data?.romaji || '')}</p>
+            </div>
+
+            ${extraHtml}
+
+            <p class="text-sec" style="margin:0;font-size:13px;line-height:1.6;">
+              <strong class="text-pri">Nuance:</strong> ${escapeHtml(data?.nuance || '')}
+            </p>
+          </article>`;
+
+        els.translatorResults.innerHTML = [
+          buildCard(
+            'casual',
+            `<span class="pill-glow" style="padding:4px 10px;font-size:10.5px;text-transform:uppercase;letter-spacing:0.06em;">Register 01 • Casual / Danseigo</span>`,
+            'Voice vibe: Relaxed, warm Tokyo friend',
+            res.casual,
+            contractionsHtml,
+            'register-01-card'
+          ),
+          buildCard(
+            'polite',
+            `<span class="result-inner accent" style="display:inline-flex;padding:4px 10px;border-radius:9999px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Register 02 • Standard Polite (Desu / Masu)</span>`,
+            'Voice vibe: Friendly everyday Tokyo local',
+            res.polite
+          ),
+          buildCard(
+            'keigo',
+            `<span class="result-inner accent-muted" style="display:inline-flex;padding:4px 10px;border-radius:9999px;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">Register 03 • Formal Keigo (Sonkeigo / Kenjōgo)</span>`,
+            'Voice vibe: Crisp, respectful Tokyo hotel concierge',
+            res.keigo
+          )
+        ].join('');
+      }
+
+      function scrollToRegister01() {
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            const card = $('register-01-card');
+            if (card) card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 90);
+        });
+      }
+
+      async function handleTranslate() {
+        const phrase = els.translatorInput.value.trim();
+        if (!phrase) {
+          state.translateError = 'Type an English phrase or real-life situation to translate.';
+          renderTranslateError();
+          return;
+        }
+        if (!state.apiKey || !state.apiKey.trim()) {
+          state.translateError = 'NO_API_KEY';
+          renderTranslateError();
+          return;
+        }
+
+        stopCardAudio();
+        state.translateError = null;
+        state.translating = true;
+        state.activeContractionId = null;
+        renderTranslateError();
+
+        els.btnTranslate.disabled = true;
+        els.transIconSpark.classList.add('hidden');
+        els.transIconSpin.classList.remove('hidden');
+        els.transBtnLabel.textContent = 'Crafting 3 Tokyo Registers...';
+
+        const systemInstruction =
+          'You are an expert native Tokyo Japanese linguist and language coach. Given any English phrase or real-life situation, produce natural, authentic Japanese in 3 distinct registers: (1) Casual / Masculine Danseigo & Slang using natural spoken contractions (~chau, ~chatta, ~teru, ~tara, ~jan, masculine -ee endings where authentic), (2) Standard Polite (Desu / Masu) everyday Tokyo Japanese, and (3) Formal Keigo (Sonkeigo / Kenjōgo) respectful hotel or business Japanese. Return strictly valid JSON matching the schema.';
+
+        const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${encodeURIComponent(state.apiKey.trim())}`;
+
+        try {
+          const response = await fetchWithBackoff(endpoint, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              systemInstruction: { parts: [{ text: systemInstruction }] },
+              contents: [
+                {
+                  role: 'user',
+                  parts: [{ text: `Translate this English phrase or situation into the 3 Tokyo Japanese registers:\n"${phrase}"` }]
+                }
+              ],
+              generationConfig: {
+                responseMimeType: 'application/json',
+                responseSchema: {
+                  type: 'OBJECT',
+                  properties: {
+                    casual: {
+                      type: 'OBJECT',
+                      properties: {
+                        japanese: { type: 'STRING' },
+                        readingKana: { type: 'STRING' },
+                        romaji: { type: 'STRING' },
+                        nuance: { type: 'STRING' },
+                        contractions: {
+                          type: 'ARRAY',
+                          items: {
+                            type: 'OBJECT',
+                            properties: {
+                              token: { type: 'STRING' },
+                              baseForm: { type: 'STRING' },
+                              meaning: { type: 'STRING' },
+                              vibe: { type: 'STRING' }
+                            },
+                            required: ['token', 'baseForm', 'meaning']
+                          }
+                        }
+                      },
+                      required: ['japanese', 'readingKana', 'romaji', 'nuance']
+                    },
+                    polite: {
+                      type: 'OBJECT',
+                      properties: {
+                        japanese: { type: 'STRING' },
+                        readingKana: { type: 'STRING' },
+                        romaji: { type: 'STRING' },
+                        nuance: { type: 'STRING' }
+                      },
+                      required: ['japanese', 'readingKana', 'romaji', 'nuance']
+                    },
+                    keigo: {
+                      type: 'OBJECT',
+                      properties: {
+                        japanese: { type: 'STRING' },
+                        readingKana: { type: 'STRING' },
+                        romaji: { type: 'STRING' },
+                        nuance: { type: 'STRING' }
+                      },
+                      required: ['japanese', 'readingKana', 'romaji', 'nuance']
+                    }
+                  },
+                  required: ['casual', 'polite', 'keigo']
+                }
+              }
+            })
+          });
+
+          if (!response.ok) {
+            let errMsg = `Gemini Translator error (${response.status})`;
+            try {
+              const errJson = await response.json();
+              if (errJson?.error?.message) errMsg = errJson.error.message;
+            } catch (_) {}
+            throw new Error(errMsg);
+          }
+
+          const data = await response.json();
+          const rawJsonText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+          if (!rawJsonText) throw new Error('Gemini returned an empty translation response.');
+
+          const parsed = JSON.parse(rawJsonText);
+          const entry = { ...parsed, sourceEnglish: phrase, timestamp: Date.now() };
+          state.translationResult = entry;
+          state.transHistory = [entry, ...state.transHistory.filter((i) => i.sourceEnglish !== phrase)].slice(0, 10);
+          storageSet(STORAGE_KEYS.TRANS_HISTORY, JSON.stringify(state.transHistory));
+
+          renderHistoryUI();
+          renderTranslationResults();
+          scrollToRegister01();
+        } catch (err) {
+          state.translateError = err?.message || 'Failed to translate phrase. Check your API key.';
+          renderTranslateError();
+        } finally {
+          state.translating = false;
+          els.btnTranslate.disabled = false;
+          els.transIconSpark.classList.remove('hidden');
+          els.transIconSpin.classList.add('hidden');
+          els.transBtnLabel.textContent = 'Translate into 3 Registers';
+        }
+      }
+
+      async function handlePlayRegisterCard(regId) {
+        const japaneseText = state.translationResult?.[regId]?.japanese;
+        if (!japaneseText) return;
+
+        if (state.playingCardId === regId) {
+          stopCardAudio();
+          return;
+        }
+
+        stopReaderAudio(false);
+        stopCardAudio();
+
+        const runId = ++cardRunId;
+        const cleanText = scrubTextForSpeech(japaneseText) || japaneseText;
+        const direction = REGISTER_VOICE_DIRECTIONS[regId] || 'natural Tokyo speaker';
+
+        if (state.apiKey && state.apiKey.trim()) {
+          state.loadingCardId = regId;
+          renderTranslationResults();
+          const cacheKey = `card|${state.ttsModel}|${state.ttsVoice}|${direction}|${cleanText}`;
+
+          try {
+            let blobUrl = chunkAudioCache.get(cacheKey);
+            if (!blobUrl) {
+              blobUrl = await synthesizeGeminiTTS({
+                text: cleanText,
+                apiKey: state.apiKey.trim(),
+                model: state.ttsModel,
+                voiceName: state.ttsVoice,
+                stylePrompt: `Speak natural Japanese as a ${direction}`
+              });
+              cacheAudioBlobUrl(cacheKey, blobUrl);
+            }
+            if (cardRunId !== runId) return;
+
+            cardAudio.src = blobUrl;
+            cardAudio.onended = () => {
+              if (cardRunId !== runId) return;
+              state.playingCardId = null;
+              updateAvatarPulse();
+              renderTranslationResults();
+            };
+            cardAudio.onerror = () => {
+              if (cardRunId !== runId) return;
+              state.playingCardId = null;
+              updateAvatarPulse();
+              renderTranslationResults();
+              showToast('Audio playback interrupted');
+            };
+
+            state.loadingCardId = null;
+            state.playingCardId = regId;
+            updateAvatarPulse();
+            renderTranslationResults();
+            await cardAudio.play();
+            return;
+          } catch (err) {
+            if (cardRunId !== runId) return;
+            state.loadingCardId = null;
+            renderTranslationResults();
+            if (err?.isRateLimit) {
+              showToast(`Rate limit — tap Play again in ${err.retrySeconds || 20}s`);
+              return;
+            }
+            const diag = err?.diagnosticLabel || err?.message || 'Could not play Gemini TTS audio';
+            showToast(state.autoFallback ? `${diag} — playing with Offline Voice` : diag);
+            if (!state.autoFallback || typeof window === 'undefined' || !('speechSynthesis' in window)) {
+              return;
+            }
+          }
+        }
+
+        // Offline Browser TTS fallback
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          const utt = new SpeechSynthesisUtterance(cleanText);
+          const preferred =
+            state.browserVoices.find((v) => v.voiceURI === state.selectedBrowserVoiceURI) ||
+            findPreferredJapaneseFemaleVoice(state.browserVoices);
+          if (preferred) {
+            utt.voice = preferred;
+            utt.lang = preferred.lang;
+          } else {
+            utt.lang = 'ja-JP';
+          }
+          utt.rate = regId === 'keigo' ? 0.92 : regId === 'casual' ? 1.0 : 0.95;
+          utt.pitch = state.browserPitch;
+          utt.onend = () => {
+            if (cardRunId !== runId) return;
+            state.playingCardId = null;
+            updateAvatarPulse();
+            renderTranslationResults();
+          };
+          utt.onerror = () => {
+            if (cardRunId !== runId) return;
+            state.playingCardId = null;
+            updateAvatarPulse();
+            renderTranslationResults();
+          };
+          state.playingCardId = regId;
+          updateAvatarPulse();
+          renderTranslationResults();
+          window.speechSynthesis.speak(utt);
+        } else {
+          showToast('Paste your free API Key in Settings for Native Gemini Audio');
+        }
+      }
+
+      async function handleCopyCard(regId) {
+        const text = state.translationResult?.[regId]?.japanese;
+        if (!text) return;
+        try {
+          if (navigator.clipboard?.writeText) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const temp = document.createElement('textarea');
+            temp.value = text;
+            document.body.appendChild(temp);
+            temp.select();
+            document.execCommand('copy');
+            document.body.removeChild(temp);
+          }
+          state.copiedCardId = regId;
+          renderTranslationResults();
+          showToast('Copied Japanese phrase');
+          setTimeout(() => {
+            if (state.copiedCardId === regId) {
+              state.copiedCardId = null;
+              renderTranslationResults();
+            }
+          }, 1800);
+        } catch (_) {
+          showToast('Could not copy to clipboard');
+        }
+      }
+
+      // ======================================================================
+      // SETTINGS MODAL CONTROLLER
+      // ======================================================================
+      function renderSettingsModels() {
+        els.settingsModelList.innerHTML = TTS_MODELS.map((m) => {
+          const sel = state.ttsModel === m.id;
+          return `<button type="button" class="model-opt ${sel ? 'selected' : ''}" data-tts-model="${escapeHtml(m.id)}">
+            <span style="font-size:12px;font-family:monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${escapeHtml(m.label)}</span>
+            <span class="card-inner" style="flex-shrink:0;font-size:10px;font-weight:700;text-transform:uppercase;padding:3px 8px;border-radius:9999px;">${escapeHtml(m.badge)}</span>
+          </button>`;
+        }).join('');
+      }
+
+      function renderKeyEyeIcon() {
+        els.inputApiKey.type = state.showApiKey ? 'text' : 'password';
+        els.btnToggleKeyVis.innerHTML = state.showApiKey ? ICONS.eyeOff : ICONS.eye;
+      }
+
+      function openSettingsModal() {
+        els.inputApiKey.value = state.apiKey;
+        renderKeyEyeIcon();
+        renderSettingsModels();
+        renderAvatar();
+        els.settingsModal.classList.remove('hidden');
+      }
+
+      function closeSettingsModal() {
+        els.settingsModal.classList.add('hidden');
+      }
+
+      // ======================================================================
+      // INITIALIZE STATIC CONTROLS & EVENT LISTENERS
+      // ======================================================================
+      function initStaticDropdowns() {
+        els.selectDeliveryStyle.innerHTML = DELIVERY_PRESETS.map(
+          (p) => `<option value="${escapeHtml(p.id)}">${escapeHtml(p.label)}</option>`
+        ).join('');
+
+        els.selectGeminiVoice.innerHTML = GEMINI_VOICES.map(
+          (v) => `<option value="${escapeHtml(v.id)}">${escapeHtml(v.id)} — ${escapeHtml(v.desc)}</option>`
+        ).join('');
+
+        els.translatorExamples.innerHTML = TRANSLATOR_EXAMPLES.map(
+          (ex) => `<button type="button" class="example-chip" data-example="${escapeHtml(ex)}">“${escapeHtml(ex)}”</button>`
+        ).join('');
+      }
+
+      function loadBrowserVoices() {
+        if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
+          state.speechSynthSupported = false;
+          renderBrowserVoiceOptions();
+          return;
+        }
+        state.speechSynthSupported = true;
+        const list = window.speechSynthesis.getVoices() || [];
+        if (list.length === 0) {
+          renderBrowserVoiceOptions();
+          return;
+        }
+
+        const sorted = [...list].sort((a, b) => {
+          const aJa = /ja/i.test(a.lang) ? 1 : 0;
+          const bJa = /ja/i.test(b.lang) ? 1 : 0;
+          if (aJa !== bJa) return bJa - aJa;
+          const femHint = /kyoko|haruka|nanami|sayaka|ayumi|mizuki|o-ren|female|google 日本語/i;
+          const aFem = femHint.test(a.name) ? 1 : 0;
+          const bFem = femHint.test(b.name) ? 1 : 0;
+          if (aFem !== bFem) return bFem - aFem;
+          return a.name.localeCompare(b.name);
+        });
+
+        state.browserVoices = sorted;
+        if (!state.selectedBrowserVoiceURI || !sorted.some((v) => v.voiceURI === state.selectedBrowserVoiceURI)) {
+          const pref = findPreferredJapaneseFemaleVoice(sorted);
+          state.selectedBrowserVoiceURI = pref ? pref.voiceURI : '';
+          storageSet(STORAGE_KEYS.BROWSER_VOICE, state.selectedBrowserVoiceURI);
+        }
+        renderBrowserVoiceOptions();
+      }
+
+      function bindEvents() {
+        // Theme Toggle
+        document.querySelectorAll('[data-set-theme]').forEach((btn) => {
+          btn.addEventListener('click', () => applyTheme(btn.getAttribute('data-set-theme')));
+        });
+
+        // Tabs
+        els.tabBtnReader.addEventListener('click', () => {
+          state.activeTab = 'reader';
+          renderTabs();
+        });
+        els.tabBtnTranslator.addEventListener('click', () => {
+          state.activeTab = 'translator';
+          renderTabs();
+        });
+
+        // Avatar Upload
+        els.btnAvatar.addEventListener('click', () => els.inputAvatar.click());
+        els.btnSettingsPickAvatar.addEventListener('click', () => els.inputAvatar.click());
+        els.inputAvatar.addEventListener('change', async (e) => {
+          const file = e.target.files?.[0];
+          e.target.value = '';
+          if (!file) return;
+          try {
+            const dataUrl = await cropImageToSquareDataUrl(file, 256);
+            state.avatarUrl = dataUrl;
+            storageSet(STORAGE_KEYS.AVATAR, dataUrl);
+            renderAvatar();
+            showToast('Custom Avatar saved permanently');
+          } catch (err) {
+            showToast(err?.message || 'Could not process image');
+          }
+        });
+
+        els.btnSettingsClearAvatar.addEventListener('click', () => {
+          state.avatarUrl = '';
+          storageSet(STORAGE_KEYS.AVATAR, '');
+          renderAvatar();
+          showToast('Custom Avatar reset');
+        });
+
+        // .docx Upload
+        els.btnOpenDocx.addEventListener('click', () => els.inputDocx.click());
+        els.inputDocx.addEventListener('change', async (e) => {
+          const file = e.target.files?.[0];
+          e.target.value = '';
+          if (!file) return;
+          if (!file.name.toLowerCase().endsWith('.docx')) {
+            state.readerError = 'Please select a valid Microsoft Word (.docx) file.';
+            renderPlaybackUI();
+            return;
+          }
+
+          stopReaderAudio(true);
+          state.readerError = null;
+          els.btnOpenDocx.disabled = true;
+          els.docxIconUpload.classList.add('hidden');
+          els.docxIconSpin.classList.remove('hidden');
+          els.docxBtnLabel.textContent = 'Extracting Mega-Scroll...';
+
+          try {
+            const extractedText = await extractTextFromDocx(file);
+            state.rawText = extractedText;
+            state.docFileName = file.name;
+            state.activeMovementIdx = 0;
+            state.currentChunkIdx = 0;
+            state.movementsOpen = false;
+            els.rawTextInput.value = extractedText;
+            if (extractedText.length < 200000) storageSet(STORAGE_KEYS.STORY_TEXT, extractedText);
+            rebuildMovementsAndStage(false);
+            autoSizeRawTextarea();
+            showToast(`Loaded "${file.name}" • ${state.movements.length} Movement${state.movements.length === 1 ? '' : 's'}`);
+          } catch (err) {
+            state.readerError = err?.message || 'Could not parse this .docx file.';
+            renderPlaybackUI();
+          } finally {
+            els.btnOpenDocx.disabled = false;
+            els.docxIconUpload.classList.remove('hidden');
+            els.docxIconSpin.classList.add('hidden');
+            els.docxBtnLabel.textContent = 'Open .docx Mega-Scroll';
+          }
+        });
+
+        // Scrubber Toggle
+        els.btnScrubber.addEventListener('click', () => {
+          state.scrubberEnabled = !state.scrubberEnabled;
+          storageSet(STORAGE_KEYS.SCRUBBER, String(state.scrubberEnabled));
+          renderScrubberToggle();
+        });
+
+        // Seamless Auto-Fallback Toggle
+        els.btnAutoFallback.addEventListener('click', () => {
+          state.autoFallback = !state.autoFallback;
+          storageSet(STORAGE_KEYS.AUTO_FALLBACK, String(state.autoFallback));
+          renderAutoFallbackToggle();
+          showToast(
+            state.autoFallback
+              ? 'Auto-Fallback ON — Offline voice covers blocked chunks'
+              : 'Auto-Fallback OFF'
+          );
+        });
+
+        // Movements Accordion Toggle & Selection
+        els.btnMovementsToggle.addEventListener('click', () => {
+          state.movementsOpen = !state.movementsOpen;
+          renderMovementsAccordion();
+        });
+
+        els.movementsList.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-mv-idx]');
+          if (!btn) return;
+          const idx = parseInt(btn.getAttribute('data-mv-idx'), 10);
+          stopReaderAudio(true);
+          state.activeMovementIdx = idx;
+          state.currentChunkIdx = 0;
+          state.movementsOpen = false;
+          rebuildMovementsAndStage(true);
+        });
+
+        // Voice Engine Controls
+        els.btnEngineGemini.addEventListener('click', () => {
+          stopReaderAudio(false);
+          state.voiceEngine = 'gemini';
+          state.readerError = null;
+          storageSet(STORAGE_KEYS.ENGINE, 'gemini');
+          renderVoiceEnginePanel();
+          renderPlaybackUI();
+        });
+
+        els.btnEngineBrowser.addEventListener('click', () => {
+          stopReaderAudio(false);
+          state.voiceEngine = 'browser';
+          state.readerError = null;
+          storageSet(STORAGE_KEYS.ENGINE, 'browser');
+          renderVoiceEnginePanel();
+          renderPlaybackUI();
+        });
+
+        els.btnInlineAddKey.addEventListener('click', openSettingsModal);
+        els.btnSandboxOpenSettings.addEventListener('click', openSettingsModal);
+        els.btnInlineUseOffline.addEventListener('click', () => {
+          state.voiceEngine = 'browser';
+          state.readerError = null;
+          storageSet(STORAGE_KEYS.ENGINE, 'browser');
+          renderVoiceEnginePanel();
+          renderPlaybackUI();
+        });
+
+        els.selectDeliveryStyle.addEventListener('change', (e) => {
+          state.deliveryStyleId = e.target.value;
+          storageSet(STORAGE_KEYS.DELIVERY_STYLE, state.deliveryStyleId);
+          renderVoiceEnginePanel();
+        });
+
+        els.selectGeminiVoice.addEventListener('change', (e) => {
+          state.ttsVoice = e.target.value;
+          storageSet(STORAGE_KEYS.TTS_VOICE, state.ttsVoice);
+        });
+
+        els.selectBrowserVoice.addEventListener('change', (e) => {
+          state.selectedBrowserVoiceURI = e.target.value;
+          storageSet(STORAGE_KEYS.BROWSER_VOICE, state.selectedBrowserVoiceURI);
+        });
+
+        els.sliderRate.addEventListener('input', (e) => {
+          state.browserRate = parseFloat(e.target.value);
+          els.speedValLabel.textContent = `${state.browserRate.toFixed(2)}x`;
+          storageSet(STORAGE_KEYS.BROWSER_RATE, String(state.browserRate));
+        });
+
+        els.sliderPitch.addEventListener('input', (e) => {
+          state.browserPitch = parseFloat(e.target.value);
+          els.pitchValLabel.textContent = state.browserPitch.toFixed(2);
+          storageSet(STORAGE_KEYS.BROWSER_PITCH, String(state.browserPitch));
+        });
+
+        els.btnMayaPreset.addEventListener('click', () => {
+          state.browserRate = 0.88;
+          state.browserPitch = 1.06;
+          storageSet(STORAGE_KEYS.BROWSER_RATE, '0.88');
+          storageSet(STORAGE_KEYS.BROWSER_PITCH, '1.06');
+          const pref = findPreferredJapaneseFemaleVoice(state.browserVoices);
+          if (pref) {
+            state.selectedBrowserVoiceURI = pref.voiceURI;
+            storageSet(STORAGE_KEYS.BROWSER_VOICE, pref.voiceURI);
+            els.selectBrowserVoice.value = pref.voiceURI;
+          }
+          renderVoiceEnginePanel();
+          showToast("Applied Maya's Chosen Preset (0.88x • 1.06 pitch)");
+        });
+
+        els.btnCancelPacing.addEventListener('click', () => stopReaderAudio(false));
+        els.btnDismissReaderErr.addEventListener('click', () => {
+          state.readerError = null;
+          renderPlaybackUI();
+        });
+
+        // Live Story Stage Tap-to-Jump (Zero scroll hijacking)
+        els.liveStoryStage.addEventListener('click', (e) => {
+          const span = e.target.closest('[data-chunk-idx]');
+          if (!span) return;
+          const idx = parseInt(span.getAttribute('data-chunk-idx'), 10);
+          if (['playing', 'loading', 'pacing'].includes(state.playbackStatus)) {
+            playChunkAtIndex(idx);
+          } else {
+            state.currentChunkIdx = idx;
+            renderPlaybackUI();
+          }
+        });
+
+        // Raw Text Paste Box
+        els.btnTogglePastebox.addEventListener('click', () => {
+          state.pasteBoxOpen = !state.pasteBoxOpen;
+          els.rawTextInput.classList.toggle('hidden', !state.pasteBoxOpen);
+          els.pasteboxToggleLabel.textContent = state.pasteBoxOpen ? 'Hide' : 'Edit';
+          if (state.pasteBoxOpen) autoSizeRawTextarea();
+        });
+
+        els.btnClearRaw.addEventListener('click', () => {
+          stopReaderAudio(true);
+          state.rawText = '';
+          state.docFileName = '';
+          state.activeMovementIdx = 0;
+          els.rawTextInput.value = '';
+          storageSet(STORAGE_KEYS.STORY_TEXT, '');
+          rebuildMovementsAndStage(false);
+          autoSizeRawTextarea();
+        });
+
+        els.btnLoadSample.addEventListener('click', () => {
+          stopReaderAudio(true);
+          state.rawText = SAMPLE_MEGA_SCROLL;
+          state.docFileName = '';
+          state.activeMovementIdx = 0;
+          state.movementsOpen = false;
+          els.rawTextInput.value = SAMPLE_MEGA_SCROLL;
+          storageSet(STORAGE_KEYS.STORY_TEXT, SAMPLE_MEGA_SCROLL);
+          rebuildMovementsAndStage(false);
+          autoSizeRawTextarea();
+          showToast('Loaded Sample Sanctuary Scroll');
+        });
+
+        els.rawTextInput.addEventListener('input', (e) => {
+          state.rawText = e.target.value;
+          state.docFileName = '';
+          if (state.rawText.length < 200000) storageSet(STORAGE_KEYS.STORY_TEXT, state.rawText);
+          autoSizeRawTextarea();
+          rebuildMovementsAndStage(true);
+        });
+
+        // Sticky Bottom Control Dock
+        els.dockBtnPlay.addEventListener('click', () => {
+          if (state.playbackStatus === 'pacing') {
+            stopReaderAudio(false);
+          } else if (state.playbackStatus === 'playing') {
+            if (state.voiceEngine === 'gemini' && readerAudio.src) {
+              readerAudio.pause();
+              state.playbackStatus = 'paused';
+              renderPlaybackUI();
+            } else if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+              activeRunId++;
+              window.speechSynthesis.cancel();
+              state.playbackStatus = 'paused';
+              renderPlaybackUI();
+            }
+          } else if (state.playbackStatus === 'paused') {
+            if (state.voiceEngine === 'gemini' && readerAudio.src) {
+              readerAudio
+                .play()
+                .then(() => {
+                  state.playbackStatus = 'playing';
+                  renderPlaybackUI();
+                })
+                .catch(() => playChunkAtIndex(state.currentChunkIdx));
+            } else {
+              playChunkAtIndex(state.currentChunkIdx);
+            }
+          } else if (state.playbackStatus === 'idle') {
+            playChunkAtIndex(state.currentChunkIdx);
+          }
+        });
+
+        els.dockBtnRestart.addEventListener('click', () => {
+          if (['playing', 'loading', 'pacing'].includes(state.playbackStatus)) {
+            playChunkAtIndex(0);
+          } else {
+            stopReaderAudio(true);
+          }
+        });
+
+        els.dockBtnPrev.addEventListener('click', () => {
+          const target = Math.max(0, state.currentChunkIdx - 1);
+          if (['playing', 'loading', 'pacing'].includes(state.playbackStatus)) {
+            playChunkAtIndex(target);
+          } else {
+            state.currentChunkIdx = target;
+            renderPlaybackUI();
+          }
+        });
+
+        els.dockBtnNext.addEventListener('click', () => {
+          const target = Math.min(Math.max(0, state.chunks.length - 1), state.currentChunkIdx + 1);
+          if (['playing', 'loading', 'pacing'].includes(state.playbackStatus)) {
+            playChunkAtIndex(target);
+          } else {
+            state.currentChunkIdx = target;
+            renderPlaybackUI();
+          }
+        });
+
+        els.dockBtnStop.addEventListener('click', () => stopReaderAudio(false));
+
+        // Tab 2: Translator
+        els.translatorExamples.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-example]');
+          if (!btn) return;
+          els.translatorInput.value = btn.getAttribute('data-example');
+        });
+
+        els.btnTranslate.addEventListener('click', handleTranslate);
+
+        els.btnToggleHistory.addEventListener('click', () => {
+          state.showHistory = !state.showHistory;
+          renderHistoryUI();
+        });
+
+        els.historyList.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-history-idx]');
+          if (!btn) return;
+          const idx = parseInt(btn.getAttribute('data-history-idx'), 10);
+          const item = state.transHistory[idx];
+          if (!item) return;
+          els.translatorInput.value = item.sourceEnglish;
+          state.translationResult = item;
+          state.activeContractionId = null;
+          state.showHistory = false;
+          renderHistoryUI();
+          renderTranslationResults();
+          scrollToRegister01();
+        });
+
+        els.translatorResults.addEventListener('click', (e) => {
+          const playBtn = e.target.closest('[data-play-reg]');
+          if (playBtn) {
+            handlePlayRegisterCard(playBtn.getAttribute('data-play-reg'));
+            return;
+          }
+          const copyBtn = e.target.closest('[data-copy-reg]');
+          if (copyBtn) {
+            handleCopyCard(copyBtn.getAttribute('data-copy-reg'));
+            return;
+          }
+          const badgeBtn = e.target.closest('[data-contraction-id]');
+          if (badgeBtn) {
+            const cid = badgeBtn.getAttribute('data-contraction-id');
+            state.activeContractionId = state.activeContractionId === cid ? null : cid;
+            renderTranslationResults();
+          }
+        });
+
+        // Settings Modal
+        els.btnOpenSettings.addEventListener('click', openSettingsModal);
+        els.btnCloseSettings.addEventListener('click', closeSettingsModal);
+        els.settingsModal.addEventListener('click', (e) => {
+          if (e.target === els.settingsModal || e.target.classList.contains('modal-center')) {
+            closeSettingsModal();
+          }
+        });
+
+        els.btnToggleKeyVis.addEventListener('click', () => {
+          state.showApiKey = !state.showApiKey;
+          renderKeyEyeIcon();
+        });
+
+        els.settingsModelList.addEventListener('click', (e) => {
+          const btn = e.target.closest('[data-tts-model]');
+          if (!btn) return;
+          state.ttsModel = btn.getAttribute('data-tts-model');
+          storageSet(STORAGE_KEYS.TTS_MODEL, state.ttsModel);
+          renderSettingsModels();
+          renderVoiceEnginePanel();
+        });
+
+        els.btnClearApiKey.addEventListener('click', () => {
+          state.apiKey = '';
+          els.inputApiKey.value = '';
+          storageSet(STORAGE_KEYS.API_KEY, '');
+          renderKeyStatus();
+          showToast('API Key removed');
+        });
+
+        els.btnSaveSettings.addEventListener('click', () => {
+          const trimmed = els.inputApiKey.value.trim();
+          state.apiKey = trimmed;
+          storageSet(STORAGE_KEYS.API_KEY, trimmed);
+          if (trimmed) {
+            state.voiceEngine = 'gemini';
+            storageSet(STORAGE_KEYS.ENGINE, 'gemini');
+            state.readerError = null;
+            state.translateError = null;
+            renderTranslateError();
+            showToast('API Key saved locally • Native Gemini Neural TTS ready');
+          } else {
+            showToast('API Key cleared');
+          }
+          renderKeyStatus();
+          renderPlaybackUI();
+          closeSettingsModal();
+        });
+
+        // Voice list listener
+        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+          window.speechSynthesis.addEventListener?.('voiceschanged', loadBrowserVoices);
+        }
+      }
+
+      // ======================================================================
+      // BOOTSTRAP APP
+      // ======================================================================
+      function init() {
+        applyTheme(state.theme);
+        initStaticDropdowns();
+        els.rawTextInput.value = state.rawText;
+        renderAvatar();
+        renderKeyStatus();
+        renderScrubberToggle();
+        renderAutoFallbackToggle();
+        renderTabs();
+        loadBrowserVoices();
+        rebuildMovementsAndStage(false);
+        autoSizeRawTextarea();
+        renderHistoryUI();
+        bindEvents();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</body>
+</html>
